@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import { AppBar, Toolbar, MenuItem, Menu, Typography, IconButton, Drawer, List, ListItem, ListItemText, ListItemIcon} from '@material-ui/core';
+import { AppBar, Toolbar, MenuItem, Menu, Typography, IconButton, Drawer, createMuiTheme, MuiThemeProvider, responsiveFontSizes, ListItemIcon} from '@material-ui/core';
 import MenuOpenRoundedIcon  from '@material-ui/icons/MenuOpenRounded';
 import CloseRounded from '@material-ui/icons/CloseRounded';
 
 import useStyles from './styles';
 import HideOnScroll from './HideOnScroll';
+
+let theme = createMuiTheme();
+theme = responsiveFontSizes(theme);
 
 function Navbar() {
     const [open, setOpen] = useState(false)
@@ -13,17 +16,20 @@ function Navbar() {
     const list = () => (
         <div className={classes.drawer} onClick={() => setOpen(false)}>
             <div>
-            <ListItemIcon onClick={() => setOpen(false)} className={classes.closeDrawer}> 
-               <CloseRounded/> 
-            </ListItemIcon>
+            <IconButton onClick={() => setOpen(false)} className={classes.closeDrawer}> 
+               <CloseRounded className={classes.menu}/> 
+            </IconButton>
             </div>
 
-            <ul className={classes.list} >
-                {['Bio', 'Contact', 'blahblah'].map((text) => ( 
-                     <li button key={text}>
-                        <ListItemText primary={text} />
-                    </li>
-                    ))}
+            <ul  className={classes.list} >
+                <MuiThemeProvider theme={theme}>
+                    <Typography align="center" variant="h1">
+                     <li className={classes.listItems}>My journey</li>
+                     <li className={classes.listItems}>Testimonials</li> 
+                     <li className={classes.listItems}>Services</li>   
+                     <li className={classes.listItems}>Contact</li> 
+                     </Typography>
+                </MuiThemeProvider>       
             </ul>
         </div>
     )

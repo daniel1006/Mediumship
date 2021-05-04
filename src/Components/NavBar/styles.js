@@ -20,7 +20,7 @@ export default makeStyles((theme) => ({
     textDecoration: 'none',
   },
   menu: {
-     fontSize: 33,
+     fontSize: 42,
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -33,7 +33,6 @@ export default makeStyles((theme) => ({
   },
   drawer: {
     height: '100vh',
-    width: '100%',
   },
   closeDrawer: {
     display: 'flex',
@@ -44,9 +43,11 @@ export default makeStyles((theme) => ({
     justifyContent: 'flex-start',
   },
   list: {
-    display:'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-around',
-    alignItems: 'center',
+    listStyleType: 'none',
+    paddingTop: '7%',
+    paddingLeft: 0,
+  },
+  listItems: {
+    paddingBottom: "3.5rem"
   },
 }));
