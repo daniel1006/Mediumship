@@ -1,29 +1,90 @@
 import React from 'react';
-import { Card, CardMedia, CardContent, CardHeader, CardActions, Typography } from '@material-ui/core';
+import clsx from 'clsx';
+import ReactShareSocial from 'react-share-social' ;
+import { Card, CardMedia, CardContent, 
+         CardHeader, CardActions, Typography, 
+         IconButton, Collapse, Tooltip, Menu,
+        MenuItem} from '@material-ui/core';
+
+import ShareIcon from '@material-ui/icons/Share';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import useStyles from './ProductStyles';
 
 const Product = ({ product }) => {
     const classes = useStyles();
 
+//More button
     const [expanded, setExpanded] = React.useState(false);
 
     const handleExpandClick = () => {
     setExpanded(!expanded);
      };
 
+// Share Button
+    const [anchorEl, setAnchorEl] = React.useState(null);
+
+    const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+    };
+
+    const handleClose = () => {
+    setAnchorEl(null);
+    };
+
+    const style = {
+        background: 'none',
+        color: 'none',
+        boxShadow: 'none',
+        borderRadius: 0,
+        padding: 15,
+    }
+
     return (
-        <Card className={classes.root}>
-            <CardHeader title={product.name} />
+        <Card className={classes.root}> 
             <CardMedia className={classes.media} image={product.media.source} />
             <CardContent >
-                <Typography variant="h5"> {product.seo.title} </Typography>
-            <Typography dangerouslySetInnerHTML={{ __html: product.description }} variant="body2" color="textSecondary" />
+
+             <div>
+              <Typography variant="h5" gutterBottom> { product.name } </Typography>
+              <Typography variant="h7" gutterBottom> {product.seo.title} </Typography>
+            </div>
+            
+        <Tooltip title="Share" arrow>
+            <IconButton aria-label="share" aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+                <ShareIcon/>
+            </IconButton>
+        </Tooltip>
+        <Menu id="simple-menu" anchorEl={anchorEl} keepMounted open={!!anchorEl} getContentAnchorEl={null} onClose={handleClose} 
+         anchorOrigin={{
+          vertical: "top",
+          horizontal: "center",
+        }}
+        transformOrigin={{
+          vertical: "top",
+          horizontal: "right",
+        }}>
+            <ReactShareSocial 
+            url ="url_to_share.com" 
+            socialTypes={['facebook','twitter','reddit','linkedin', ]} 
+            style={style}/>
+        </Menu>
+
+        <Tooltip title="More" arrow>
+            <IconButton className={clsx(classes.expand, {[classes.expandOpen]: expanded, })} onClick={handleExpandClick} aria-expanded={expanded} aria-label="show more"> 
+               <ExpandMoreIcon className={classes.more} />
+            </IconButton>
+        </Tooltip>
+        
+        
+        <Collapse in={expanded} timeout="auto" unmountOnExit>
+            <Typography dangerouslySetInnerHTML={{ __html: product.description }} color="textSecondary" />
                 <div className={classes.cardContent}>
                     <Typography variant="h6">
                         Price: {product.price.formatted_with_symbol}
                     </Typography>
                 </div>
+        </Collapse>
             </CardContent>
             <CardActions disableSpacing className={classes.cardActions}>
               

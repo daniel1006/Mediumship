@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AppBar, Toolbar, MenuItem, Menu, Typography, IconButton, Drawer, createMuiTheme, MuiThemeProvider, responsiveFontSizes, ListItemIcon} from '@material-ui/core';
+import { AppBar, Toolbar, Typography, IconButton, Drawer, createMuiTheme, MuiThemeProvider, responsiveFontSizes, ListItemIcon} from '@material-ui/core';
 import MenuOpenRoundedIcon  from '@material-ui/icons/MenuOpenRounded';
 import CloseRounded from '@material-ui/icons/CloseRounded';
 
@@ -39,12 +39,14 @@ function Navbar() {
         <HideOnScroll>
             <AppBar position="fixed" className={classes.appBar}>
                 <Toolbar>
+                <MuiThemeProvider theme={theme}>
                     <Typography variant="h3" className={classes.title}>
                      <IconButton  aria-label="menu">
                         <MenuOpenRoundedIcon className={classes.menu} onClick={() => setOpen(true)} />
                       </IconButton>
                          Mediumship
                     </Typography>
+                </MuiThemeProvider> 
                     <div className={classes.grow} />
                 </Toolbar>
             </AppBar>

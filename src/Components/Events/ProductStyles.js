@@ -1,21 +1,45 @@
-
 import { makeStyles } from '@material-ui/core/styles';
 
-export default makeStyles(() => ({
-  root: {
-    width: '75%',
-    height: '50vh',
+const useStyles = makeStyles(theme => {
+  return {
+    root: {
+      width: '40vw', 
+      [theme.breakpoints.down("sm")]: {
+        width: '70vw',
+        [theme.breakpoints.down("xs")]: {
+          width: '65vw'
+        }
+      }
+    },
+    media: {
+      height: 0,
+      paddingTop: '56.25%', // 16:9
+    },
+    cardActions: {
+      display: 'flex',
+      justifyContent: 'flex-end',
+    },
+    cardContent: {
+      display: 'flex',
+      justifyContent: 'space-between',
+    },  transform: 'rotate(0deg)',
+    expand: {
+      transform: 'rotate(0deg)',
+      marginLeft: 'auto',
+      transition: ('transform', {
+      duration: '20',
+    }),
   },
-  media: {
-    height: 0,
-    paddingTop: '56.25%', // 16:9
+  expandOpen: {
+    transform: 'rotate(180deg)',
   },
-  cardActions: {
-    display: 'flex',
-    justifyContent: 'flex-end',
+  more: {
+    fontSize: 33,
   },
-  cardContent: {
-    display: 'flex',
-    justifyContent: 'space-between',
-  },
-}));
+  cardtitle: {
+  }
+
+  }
+})
+
+export default useStyles
