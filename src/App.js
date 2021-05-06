@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { commerce } from './lib/commerce';
 
-import { Products, Navbar, } from './Components';
+import { Products, Navbar, Testimonials, Services, HomeServices } from './Components';
 
 const App = () => {
     const [products, setProducts] = useState([]);
@@ -21,8 +22,14 @@ console.log(products)
 
     return (
         <div>
-            <Navbar />
-            <Products products={products} />
+          <Router>
+            <Switch> 
+             <Route path="/" exact component> <Navbar /> <Products products={products}/> <HomeServices/> </Route>
+
+              <Route path="/testimonials" component={Testimonials}> <Navbar /> <Testimonials/> </Route>
+              <Route path="/Services" component={Services}> <Navbar /> <Services/> </Route>
+            </Switch>
+          </Router>
         </div>
     )
 }

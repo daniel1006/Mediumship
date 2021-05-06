@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { AppBar, Toolbar, Typography, IconButton, Drawer, createMuiTheme, MuiThemeProvider, responsiveFontSizes, ListItemIcon} from '@material-ui/core';
+import {Link} from 'react-router-dom';
+import { AppBar, Toolbar, Typography, IconButton, Drawer, createMuiTheme, MuiThemeProvider, responsiveFontSizes} from '@material-ui/core';
 import MenuOpenRoundedIcon  from '@material-ui/icons/MenuOpenRounded';
 import CloseRounded from '@material-ui/icons/CloseRounded';
 
@@ -23,10 +24,10 @@ function Navbar() {
 
             <ul  className={classes.list} >
                 <MuiThemeProvider theme={theme}>
-                    <Typography align="center" variant="h1">
-                     <li className={classes.listItems}>My journey</li>
-                     <li className={classes.listItems}>Testimonials</li> 
-                     <li className={classes.listItems}>Services</li>   
+                    <Typography align="center" variant="h2">
+                     <li className={classes.listItems}> My journey </li>
+                     <li className={classes.listItems}><Link to="/testimonials" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}> Testimonials </Link></li> 
+                     <li className={classes.listItems}><Link to="/services" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}> Services </Link></li>   
                      <li className={classes.listItems}>Contact</li> 
                      </Typography>
                 </MuiThemeProvider>       
@@ -44,7 +45,7 @@ function Navbar() {
                      <IconButton  aria-label="menu">
                         <MenuOpenRoundedIcon className={classes.menu} onClick={() => setOpen(true)} />
                       </IconButton>
-                         Mediumship
+                         <Link to="/" className={classes.mediumShip} color="primary"> Mediumship </Link>
                     </Typography>
                 </MuiThemeProvider> 
                     <div className={classes.grow} />

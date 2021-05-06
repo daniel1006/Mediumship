@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid } from '@material-ui/core';
+import { Grid, Typography, createMuiTheme, MuiThemeProvider, responsiveFontSizes } from '@material-ui/core';
 
 import Product from './Product';
 import useStyles from './ProductsStyles';
@@ -7,12 +7,20 @@ import useStyles from './ProductsStyles';
 const Products = ({ products }) => {
     const classes = useStyles();
 
+    let theme = createMuiTheme();
+    theme = responsiveFontSizes(theme);
+
     return (
     <main className={classes.content}>
         <div className={classes.toolbar} />
-        <Grid container direction="column" justify="space-evenly" alignItems="center" spacing={5} >
+
+        <MuiThemeProvider theme={theme}>
+        <Typography align="center" variant="h1" className={classes.upComingTitle}> Upcoming events</Typography>
+        </MuiThemeProvider>
+
+        <Grid container direction="row" justify="space-evenly" alignItems="center" spacing={3} >
              {products.map((product) => (
-                 <Grid item key={product.id} xs={12} sm={12} md={12} lg={12}>
+                 <Grid item key={product.id} sm={12} xs={12} md={6} lg={4}>
                       <Product product={product} />
                  </Grid>
              ))}

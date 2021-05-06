@@ -48,6 +48,10 @@ export default makeStyles((theme) => ({
     paddingLeft: 0,
   },
   listItems: {
-    paddingBottom: "3.5rem"
+    paddingBottom: "3.5rem",
   },
+  mediumShip: {
+    textDecoration: 'none',
+    color: 'rgba(0, 0, 0, 0.87)'
+  }
 }));

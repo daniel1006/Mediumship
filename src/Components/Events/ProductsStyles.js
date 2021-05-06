@@ -10,4 +10,12 @@ export default makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
+  upComingTitle: {
+    display:'flex',
+    justifyContent: 'center',
+    padding: theme.spacing(6),
+    [theme.breakpoints.down("sm")]: {
+      padding: theme.spacing(4),
+    }
+  },
 }));

@@ -1,10 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import ReactShareSocial from 'react-share-social' ;
-import { Card, CardMedia, CardContent, 
-         CardHeader, CardActions, Typography, 
-         IconButton, Collapse, Tooltip, Menu,
-        MenuItem} from '@material-ui/core';
+import { Card, CardMedia, CardContent, CardActions, Typography, IconButton, Collapse, Tooltip, Menu, Button} from '@material-ui/core';
 
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -41,13 +38,14 @@ const Product = ({ product }) => {
     }
 
     return (
-        <Card className={classes.root}> 
+       <>
+        <Card className={classes.root}>  
             <CardMedia className={classes.media} image={product.media.source} />
             <CardContent >
 
              <div>
               <Typography variant="h5" gutterBottom> { product.name } </Typography>
-              <Typography variant="h7" gutterBottom> {product.seo.title} </Typography>
+              <Typography className={classes.carddate} variant="h7" gutterBottom> {product.seo.title} </Typography>
             </div>
             
         <Tooltip title="Share" arrow>
@@ -77,19 +75,20 @@ const Product = ({ product }) => {
         </Tooltip>
         
         
-        <Collapse in={expanded} timeout="auto" unmountOnExit>
-            <Typography dangerouslySetInnerHTML={{ __html: product.description }} color="textSecondary" />
+        <Collapse in={expanded} timeout="auto" unmountOnExit >
+            <Typography dangerouslySetInnerHTML={{ __html: product.description }} color="textSecondary" className={classes.cardText}/>
                 <div className={classes.cardContent}>
-                    <Typography variant="h6">
+                    <Typography style={{paddingTop: 6}} body="h1">
                         Price: {product.price.formatted_with_symbol}
                     </Typography>
-                </div>
+                    <Button variant="contained">Contact</Button>
+                </div>     
         </Collapse>
             </CardContent>
-            <CardActions disableSpacing className={classes.cardActions}>
-              
+            <CardActions disableSpacing className={classes.cardActions}>      
             </CardActions>
         </Card>
+        </>
     )
 }
 

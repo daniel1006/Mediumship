@@ -3,13 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => {
   return {
     root: {
-      width: '40vw', 
-      [theme.breakpoints.down("sm")]: {
-        width: '70vw',
-        [theme.breakpoints.down("xs")]: {
-          width: '65vw'
-        }
-      }
+      height: '100%',
     },
     media: {
       height: 0,
@@ -22,6 +16,7 @@ const useStyles = makeStyles(theme => {
     cardContent: {
       display: 'flex',
       justifyContent: 'space-between',
+      paddingTop: '5',
     },  transform: 'rotate(0deg)',
     expand: {
       transform: 'rotate(0deg)',
@@ -36,8 +31,12 @@ const useStyles = makeStyles(theme => {
   more: {
     fontSize: 33,
   },
-  cardtitle: {
-  }
+  carddate: {
+    paddingLeft: 3,
+  },
+  cardText: {
+    paddingBottom: 20,
+  },
 
   }
 })
