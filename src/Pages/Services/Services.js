@@ -1,40 +1,46 @@
-import React, {useState} from 'react';
+import React, {Component} from 'react';
 import CardDetails from './CardDetails';
 import Card from './Card';
 
 import useStyles from './ServiceStyle';
 
-const Services = () => {
+export class Service extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {show: [false, false,]};
+    }
+    render() {
+        return(
+            <div style={{paddingTop: '10%'}}>
+            <div>
+                <button onClick={()=>this.showHide(0)}> Details </button>
+                { this.state.show[0] && 
+                                <div>
+                                   <CardDetails/>
+                                   <button onClick={()=>this.showHide(0)}> Close </button>
+                                </div>
+                            }
+             </div>
 
-    const [showResults, setShowResults] = React.useState(false)
-     const onClick = () => setShowResults(true)
-    const classes = useStyles();
+            <div>
+            <button onClick={()=>this.showHide(1)}> Details </button>
+                            { this.state.show[1] && 
+                                <div>
+                                    <Card/>
+                                </div>
+                            }
+           </div>
 
+             </div>
+        )
 
-    return (
-        <div className={classes.root}>
-              Services
-
-<div>
-<input type="submit" value="Search" onClick={onClick} />
-             { showResults? <CardDetails/> :null}
-              <button onClick={()=> setShowResults(false)}>Close</button>
-</div>
-
-
-<div>
-           {
-              showResults?<div>
-                  <Card/>
-
-                  </div>:null
-              
-             }
-
- </div>
-
-        </div>
-    )
+    }
+    showHide(num){
+        this.setState((prevState) => {
+            const newItems = [...prevState.show];
+            newItems[num] = !newItems[num];
+            return {show: newItems};
+        });
+    }
 }
-
-export default Services
+export default Service
