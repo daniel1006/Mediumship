@@ -38,6 +38,7 @@ const useStyles = makeStyles (theme => {
         },
         textField: {
             paddingBottom: 15,
+            textAlign: 'center'
         },
         arrow: {
             marginTop: 32.5

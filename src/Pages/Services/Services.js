@@ -1,10 +1,9 @@
 import React from 'react';
-import {Grid, Card, CardContent, Typography, Button, Modal, ModalContainer} from '@material-ui/core';
+import {Grid, Card, CardContent, CardActionArea, Typography, Button, Modal, CardMedia} from '@material-ui/core';
 
 import SoloRead from './SoloRead';
 
 import useStyles from './ServiceStyle';
-import './CardBackground.css';
 
 const Services = () => {
   const classes = useStyles();
@@ -32,43 +31,47 @@ const Services = () => {
     return (
       <div className={classes.root}>
       <Grid container direction="row" justify="space-evenly" alignItems="center" spacing={3}>
-        <Grid item sm={12} xs={12} md={6} lg={4}>
-        
-          <Card>
-          <CardContent>
-            <div id="cardContainer">
-           
-             <Typography variant="h5" gutterBottom>Solo reading</Typography>
-             <Typography variant="h6" color='textSecondary' gutterBottom>She had a difficult time owning up to her own crazy self.</Typography>
-             <Typography variant="h7" gutterBottom className={classes.price}>Price: 25$</Typography>
-                
-            </div>
-            <Button id="button" variant="contained" onClick={handleOpen1}>Details</Button> 
-            </CardContent>
 
-          <Modal open={open1} onClose={handleClose1}>
+      <Grid item sm={11} xs={11} md={4} lg={3}>  
+      <Card>
+        <CardActionArea onClick={handleOpen1}>  
+          <CardMedia component="img"
+                           image="https://images.unsplash.com/photo-1617489341387-97b20c1aa852?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHNwaXJpdHVhbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                           title="Services"
+                           className={classes.media} />
+           <CardContent className={classes.cardContent}>
+            <Typography variant="h5">Solo read</Typography> 
+            <Typography variant="h5" color='textSecondary' className={classes.price}>50$</Typography> 
+           </CardContent>
+        </CardActionArea>
+
+        <Modal open={open1} onClose={handleClose1}>
             <SoloRead handleClose1={handleClose1}/>
-          </Modal>  
-
-          </Card> 
-          </Grid>
-          
-          <Grid item sm={12} xs={12} md={6} lg={4}>
-        
-        <Card className={classes.cardContainer}>
-         <CardContent>
-           <Typography variant="h5" gutterBottom>Solo reading</Typography>
-           <Typography variant="h6" color='textSecondary' gutterBottom>She had a difficult time owning up to her own crazy self.</Typography>
-           <Typography variant="h7" gutterBottom className={classes.price}>Price: 25$</Typography>
-          <Button variant="contained" onClick={handleOpen2}>Details</Button>
-         </CardContent>
-
-        <Modal open={open2} onClose={handleClose2}>
-         <div>I am number 2</div>
         </Modal>  
 
-        </Card> 
-        </Grid>
+       </Card> 
+      </Grid>
+          
+      <Grid item sm={11} xs={11} md={4} lg={3}>
+        
+       <Card>
+        <CardActionArea onClick={handleOpen2}>  
+          <CardMedia component="img"
+                           image="https://images.unsplash.com/photo-1617489341387-97b20c1aa852?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHNwaXJpdHVhbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                           title="Services"
+                           className={classes.media} />
+           <CardContent className={classes.cardContent}>
+            <Typography variant="h5">Solo read</Typography> 
+            <Typography variant="h5" color='textSecondary' className={classes.price}>50$</Typography> 
+           </CardContent>
+        </CardActionArea>
+
+        <Modal open={open2} onClose={handleClose2}>
+            <div>we are here we are here we are here</div>
+        </Modal>  
+
+       </Card> 
+      </Grid>
 
 
         </Grid>

@@ -1,9 +1,0 @@
-#button {
-  opacity: 0;
-}
-
-#cardContainer:hover+#button {
-   opacity: 1;
-   background: pink;
-}
-
