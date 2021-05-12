@@ -5,3 +5,5 @@ export { default as Services } from '../Pages/Services/Services';
 export { default as HomeServices } from './HomeServices/HomeServices';
 export { default as HomeBio } from './HomeBio/HomeBio';
 export { default as Contact } from '../Pages/Contact/Contact';
+export { default as MyJourney } from '../Pages/MyJourney/MyJourney';
+export { default as ThankYou } from '../Pages/Contact/ThankYou';

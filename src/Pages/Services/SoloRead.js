@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import { Grid, Card, CardMedia, CardContent, Button, Typography, createMuiTheme, MuiThemeProvider, responsiveFontSizes } from '@material-ui/core';
 import useStyles from './ModalStyle';
 
@@ -26,6 +27,7 @@ const CardDetails = props => {
         </MuiThemeProvider> 
            
          <Button className={classes.button} variant="contained" size="large" onClick={props.handleClose1}>Close</Button>
+         <Button className={classes.button2} variant="contained" size="large"><Link to="/contact" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>Contact</Link></Button>
 
         </CardContent>  
        </Card>                

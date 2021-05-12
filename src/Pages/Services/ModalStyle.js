@@ -30,6 +30,10 @@ const useStyles = makeStyles(theme => {
         button: {
             marginTop: 25,
         },
+        button2: {
+            marginTop: 25,
+            marginLeft: 30,
+        },
     }
 })
 

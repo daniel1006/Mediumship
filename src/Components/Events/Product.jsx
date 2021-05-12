@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import clsx from 'clsx';
 import ReactShareSocial from 'react-share-social' ;
 import { Card, CardMedia, CardContent, CardActions, Typography, IconButton, Collapse, Tooltip, Menu, Button} from '@material-ui/core';
@@ -81,7 +82,7 @@ const Product = ({ product }) => {
                     <Typography style={{paddingTop: 6}} body="h1">
                         Price: {product.price.formatted_with_symbol}
                     </Typography>
-                    <Button variant="contained">Contact</Button>
+                    <Button variant="contained"><Link to="/contact" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>Contact</Link></Button>
                 </div>     
         </Collapse>
             </CardContent>

@@ -16,7 +16,7 @@ const HomeBio = () => {
               <Typography className={classes.text} variant="h3" gutterBottom>Claudia Remy</Typography>
               <Typography className={classes.text2} variant="body1">You know that tingly feeling you get on the back of your neck sometimes? I just got that feeling when talking with her. You know I don't believe in sixth senses, but there is something not right with her. I don't know how I know, but I just do.
               </Typography>
-              <Link to="/contact" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>
+              <Link to="/myjourney" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>
                <Button className={classes.button} variant="contained">My journey</Button>
               </Link>
             </div>
