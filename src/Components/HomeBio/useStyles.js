@@ -10,16 +10,13 @@ const useStyles = makeStyles(theme => {
        height: '100%'
    },
    media: {
-       height: 460,
-       width: 499,
+     boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
+     borderRadius: '4px',
+       width: 420,
        [theme.breakpoints.down("sm")]: {
-        height: 300,
-        width: 'auto',
+        width: 250,    
         marginTop: '15%'
       },
-      [theme.breakpoints.down("xs")]: {
-        height: 200,
-      }
   },
   card: {
        display: 'flex',
@@ -33,7 +30,13 @@ const useStyles = makeStyles(theme => {
   cardDirection: {
        display: 'flex',
        flexDirection: 'column',
-       alignItems: 'center'
+       alignItems: 'center',
+  },
+  content: {
+     display: 'flex',
+     flexDirection: 'column',
+     alignItems: 'center',
+     justifyContent: 'center',
   },
   text: {
        textAlign: 'center',

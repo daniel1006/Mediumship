@@ -10,6 +10,7 @@ const useStyles = makeStyles(theme => {
              textAlign: 'center',
         },
         media: {
+            borderRadius: '4px',
              height: 375,
              [theme.breakpoints.down("sm")]: {
                 height: 175,

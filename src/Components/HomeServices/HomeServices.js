@@ -17,7 +17,7 @@ const HomeServices = () => {
             <CardContent className={classes.cardContent}> 
             <Typography variant="h2" gutterBottom className={classes.serviceTitle}> Services </Typography>
                 <CardMedia component="img"
-                           image="https://images.unsplash.com/photo-1617489341387-97b20c1aa852?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHNwaXJpdHVhbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                           image="https://images.unsplash.com/photo-1619968987544-0f93d551d5de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
                            title="Services"
                            className={classes.media} />
             </CardContent>        

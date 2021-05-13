@@ -39,9 +39,9 @@ function Navbar() {
         <div >
         <HideOnScroll>
             <AppBar position="fixed" className={classes.appBar}>
-                <Toolbar>
+                <Toolbar className={classes.toolbar}>
                 <MuiThemeProvider theme={theme}>
-                    <Typography variant="h3" className={classes.title}>
+                    <Typography variant="h2" className={classes.title}>
                      <IconButton  aria-label="menu">
                         <MenuOpenRoundedIcon className={classes.menu} onClick={() => setOpen(true)} />
                       </IconButton>

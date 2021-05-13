@@ -14,7 +14,7 @@ export default makeStyles((theme) => ({
     },
   },
   title: {
-    flexGrow: 1,
+    justifyContent: 'center',
     alignItems: 'center',
     display: 'flex',
     textDecoration: 'none',
@@ -52,6 +52,6 @@ export default makeStyles((theme) => ({
   },
   mediumShip: {
     textDecoration: 'none',
-    color: 'rgba(0, 0, 0, 0.87)'
+    color: 'rgba(0, 0, 0, 0.87)',
   }
 }));

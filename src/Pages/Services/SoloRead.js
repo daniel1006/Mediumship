@@ -21,7 +21,7 @@ const CardDetails = props => {
                            title="Services"
                            className={classes.media} />    
         <MuiThemeProvider theme={theme}>                          
-         <Typography variant="h5" gutterBottom className={classes.title}> Solo Read  -<span className={classes.price}>price: 50$</span></Typography>
+         <Typography variant="h5" gutterBottom className={classes.title}> Solo Read  -<span className={classes.price}>price: $50</span></Typography>
          <Typography className={classes.description} variant="body1">I inadvertently went to See's Candy last week (I was in the mall looking for phone repair), and as it turns out, See's Candy now charges a dollar -- a full dollar -- for even the simplest of their wee confection offerings. I bought two chocolate lollipops and two chocolate-caramel-almond things. The total cost was four-something. I mean, the candies were tasty and all, but let's be real: A Snickers bar is fifty cents. After this dollar-per-candy revelation, I may not find myself wandering dreamily back into a See's Candy any time soon.
         </Typography>
         </MuiThemeProvider> 

@@ -16,13 +16,14 @@ const useStyles = makeStyles (theme => {
         },
         root2: {
             height: '100%',
-            border: 'none',
-            boxShadow: 'none',
+            boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
             backgroundColor: theme.palette.background.default,
          },
         media: { 
             height: 350,
-        },
+            boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
+            borderRadius: '4px',
+         },    
         cardActions: {
             display: 'flex',
             justifyContent: 'flex-end',

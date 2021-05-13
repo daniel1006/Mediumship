@@ -7,3 +7,5 @@ export { default as HomeBio } from './HomeBio/HomeBio';
 export { default as Contact } from '../Pages/Contact/Contact';
 export { default as MyJourney } from '../Pages/MyJourney/MyJourney';
 export { default as ThankYou } from '../Pages/Contact/ThankYou';
+export { default as Footer } from './Footer/Footer';
+export { default as ScrollToTop } from './ScrollToTop';
