@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
 import { commerce } from './lib/commerce';
 
-import { Products, Navbar, Testimonials, Services, HomeServices, HomeBio, Contact, MyJourney, ThankYou, Footer, ScrollToTop  } from './Components';
+import { Products, Navbar, Testimonials, Services, HomeServices, HomeBio, Contact, MyJourney, ThankYou, Footer, ScrollToTop, Greetings  } from './Components';
 
 const App = () => {
     const [products, setProducts] = useState([]);
@@ -24,7 +24,7 @@ console.log(products)
         <div>
           <Router>
             <Switch> 
-             <Route path="/" exact component> <Navbar /> <Products products={products}/> <HomeBio/> <HomeServices/> <Footer/> </Route>
+             <Route path="/" exact component> <Navbar /> <Greetings/> <Products products={products}/> <HomeBio/> <HomeServices/> <Footer/> </Route>
 
               <Route path="/testimonials" component={Testimonials}> <Navbar /> <Testimonials/> <Footer/> </Route>
               <Route path="/services" component={Services}> <Navbar /> <Services/> <Footer/> </Route>

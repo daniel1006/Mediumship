@@ -4,7 +4,6 @@ const useStyles = makeStyles(theme => {
    return {
        root: {
            paddingTop: '15%',
-           flexGrow: 1,
            backgroundColor: theme.palette.background.default,
         },
         link: {

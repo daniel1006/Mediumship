@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import { Button, Grid, Typography, createMuiTheme, MuiThemeProvider, responsiveFontSizes, CardMedia, Card } from '@material-ui/core';
+import { Button, Grid, Typography, } from '@material-ui/core';
 import useStyles from './useStyles';
 
 const ThankYou = () => {

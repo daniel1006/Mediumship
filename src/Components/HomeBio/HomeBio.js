@@ -1,16 +1,26 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import { Grid, Card, CardMedia, CardContent, CardActions, Typography, IconButton, Collapse, Tooltip, Menu, Button, Paper} from '@material-ui/core';
+import { Grid, Card, CardMedia, CardContent, Typography, Button, Container } from '@material-ui/core';
 
 import useStyles from './useStyles'
+
+const styles = {
+  root: {
+    "& .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-3.MuiGrid-align-items-xs-center.MuiGrid-justify-xs-space-evenly": {
+      width: 'auto',
+      margin: 'auto'
+   }
+  }
+};
 
 const HomeBio = () => {
     const classes = useStyles();
 
     return (
+      <Container maxWidth="lg">
         <Grid container direction="row" justify="center" alignItems="center" spacing={3}>
          
-         <Grid item sm={12} xs={12} md={8} lg={8} className={classes.root}>
+         <Grid item sm={12} xs={12} md={12} lg={12} className={classes.grid}>
            <Card className={classes.card}>
             <div className={classes.cardDirection}>
               <Typography className={classes.text} variant="h3" gutterBottom>Claudia Remy</Typography>
@@ -30,7 +40,7 @@ const HomeBio = () => {
          </Grid>
 
         </Grid>
-        
+        </Container>
     )
 }
 

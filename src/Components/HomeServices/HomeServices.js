@@ -1,19 +1,28 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import { Grid, Card, CardMedia, CardActions, CardContent, Button, Typography,  } from '@material-ui/core';
+import { Grid, Card, CardMedia, CardActions, CardContent, Button, Typography, Container } from '@material-ui/core';
 import useStyles from './styles';
 
 import ArrowDownwardRoundedIcon from '@material-ui/icons/ArrowDownwardRounded';
+
+const styles = {
+  root: {
+    "& .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-3.MuiGrid-align-items-xs-center.MuiGrid-justify-xs-space-evenly": {
+      width: 'auto',
+      margin: 'auto'
+   }
+  }
+};
 
 const HomeServices = () => {
   const classes = useStyles();
 
     return (
-    <div>   
-        <Grid className={classes.grid} container direction="row" justify="center" alignItems="center" spacing={3}>
+      <Container maxWidth="lg">  
+        <Grid className={classes.grid} container direction="column" justify="center" alignItems="center" spacing={3}>
 
-          <Grid item sm={12} xs={12} md={6} lg={6}>
-          <Card className={classes.root}>
+          <Grid item sm={12} xs={12} md={11} lg={11}>
+          <Card className={classes.card}>
             <CardContent className={classes.cardContent}> 
             <Typography variant="h2" gutterBottom className={classes.serviceTitle}> Services </Typography>
                 <CardMedia component="img"
@@ -24,8 +33,8 @@ const HomeServices = () => {
           </Card>                
           </Grid>
 
-          <Grid item sm={12} xs={12} md={5} lg={5}>
-            <Card className={classes.root2}>
+          <Grid item sm={12} xs={12} md={11} lg={11}>
+            <Card className={classes.card2}>
               <CardContent className={classes.cardContent}>
                   <Typography gutterBottom variant="body1" className={classes.textField}>The wolves stopped in their tracks, sizing up the mother and her cubs. It had been over The wolves stopped in their tracks, sizing up the mother and her cubs. It had been over</Typography>
                   <Typography gutterBottom variant="body1" className={classes.textField}>The wolves stopped in their tracks, sizing up the mother and her cubs. It had been over The wolves stopped in their tracks, sizing </Typography>
@@ -38,10 +47,10 @@ const HomeServices = () => {
            </Card>
           </Grid>
 
-          <CardActions disableSpacing className={classes.cardActions}>      
+          <CardActions  className={classes.cardActions}>      
           </CardActions>
        </Grid>
-    </div>
+    </Container>
     )
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Card, CardContent, CardActionArea, Typography, Button, Modal, CardMedia} from '@material-ui/core';
+import {Grid, Card, CardContent, CardActionArea, Typography, Modal, CardMedia} from '@material-ui/core';
 
 import SoloRead from './SoloRead';
 

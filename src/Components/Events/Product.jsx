@@ -40,7 +40,7 @@ const Product = ({ product }) => {
 
     return (
        <>
-        <Card className={classes.root}>  
+        <Card className={classes.card}>  
             <CardMedia className={classes.media} image={product.media.source} />
             <CardContent >
 
