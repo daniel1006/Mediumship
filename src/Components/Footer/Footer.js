@@ -14,6 +14,7 @@ const Footer = () => {
           
           <Grid className={classes.gridItem1} item xs={12} sm={3} md={4} lg={4}>
                <Box borderBottom={1}>Navigation</Box>
+               <Box className={classes.box}><Link className="footer-links" to="/">Home</Link></Box>
                <Box className={classes.box}><Link className="footer-links" to="/myjourney">My journey</Link></Box>
                <Box className={classes.box}><Link className="footer-links" to="/testinomials">Testimonials</Link></Box>
                <Box className={classes.box}><Link className="footer-links" to="/services">Services</Link></Box>

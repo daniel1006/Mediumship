@@ -43,7 +43,7 @@ const Contact = () => {
          <Grid item sm={11} xs={11} md={6} lg={6}> 
           <MuiThemeProvider theme={theme}>
            <Typography className={classes.title1} gutterBottom variant="h3">Have any questions?</Typography>
-           <Typography className={classes.title2} gutterBottom color="textSecondary" variant="h6">Be sure to specify any <Link to="/services" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "underline green"}}>services</Link> or upcoming <Link to="/" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "underline red"}}>events</Link> you may be wondering about.
+           <Typography className={classes.title2} gutterBottom color="textSecondary" variant="h6">Be sure to specify any <Link to="/services" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "underline green", fontSize: 24,}}>services</Link> or upcoming <Link to="/" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "underline red", fontSize: 24,}}>events</Link> you're wondering about.
            </Typography>
           </MuiThemeProvider> 
 

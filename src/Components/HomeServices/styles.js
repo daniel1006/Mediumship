@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles (theme => {
     return {
         grid: {
-           backgroundColor: theme.palette.background.default,
            paddingTop: 50,
         },
         card: {
@@ -11,12 +10,12 @@ const useStyles = makeStyles (theme => {
            border: 'none',
            boxShadow: 'none',
            paddingBottom: 15,
-           
+           backgroundColor: 'transparent',
         },
         card2: {
+            paddingTop: '3%',
+            paddingBottom: '2%',
             height: '100%',
-            boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
-            backgroundColor: theme.palette.background.default,
          },
         media: { 
             height: 350,
@@ -39,9 +38,6 @@ const useStyles = makeStyles (theme => {
         textField: {
             paddingBottom: 15,
             textAlign: 'center'
-        },
-        arrow: {
-            marginTop: 32.5
         },
         button: {
             marginTop: 32.5,

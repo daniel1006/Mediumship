@@ -32,7 +32,7 @@ const Services = () => {
       <div className={classes.root}>
       <Grid container direction="row" justify="space-evenly" alignItems="center" spacing={3}>
 
-      <Grid item sm={11} xs={11} md={4} lg={3}>  
+      <Grid  item sm={11} xs={11} md={4} lg={3}>  
       <Card>
         <CardActionArea onClick={handleOpen1}>  
           <CardMedia component="img"
@@ -45,7 +45,7 @@ const Services = () => {
            </CardContent>
         </CardActionArea>
 
-        <Modal className={classes.modal} open={open1} onClose={handleClose1}>
+        <Modal className={classes.modal} open={open1} onClick={handleClose1}>
             <SoloRead handleClose1={handleClose1}/>
         </Modal>  
 

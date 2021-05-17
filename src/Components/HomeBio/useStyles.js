@@ -36,6 +36,7 @@ const useStyles = makeStyles(theme => {
      justifyContent: 'center',
   },
   text: {
+       marginTop: '5%',
        textAlign: 'center',
   },
   text2: {

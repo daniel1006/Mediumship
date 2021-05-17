@@ -10,4 +10,4 @@ export { default as ThankYou } from '../Pages/Contact/ThankYou';
 export { default as Footer } from './Footer/Footer';
 export { default as ScrollToTop } from './ScrollToTop';
 export { default as Greetings } from './Greetings/Greetings';
-export { default as HomeTestimonials } from './HomeTestimonials/HomeTestimonials.jsx';
+export { default as HomeTestimonials } from './HomeTestimonials/HomeTestimonials';

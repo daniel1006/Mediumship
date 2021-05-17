@@ -19,6 +19,7 @@ const useStyles = makeStyles(theme => {
         media: {
             border: 'none',
            boxShadow: 'none',
+           backgroundColor: 'transparent'
         },
 }    
 })

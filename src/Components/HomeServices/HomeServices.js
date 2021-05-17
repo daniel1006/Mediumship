@@ -39,7 +39,6 @@ const HomeServices = () => {
                   <Typography gutterBottom variant="body1" className={classes.textField}>The wolves stopped in their tracks, sizing up the mother and her cubs. It had been over The wolves stopped in their tracks, sizing up the mother and her cubs. It had been over</Typography>
                   <Typography gutterBottom variant="body1" className={classes.textField}>The wolves stopped in their tracks, sizing up the mother and her cubs. It had been over The wolves stopped in their tracks, sizing </Typography>
                   <Typography gutterBottom variant="body1" className={classes.textField}>The wolves stopped in their tracks, sizing up the mother and her cubs. It had been over  </Typography>
-                  <ArrowDownwardRoundedIcon fontSize="medium" className={classes.arrow}/>
                   <Link to="/services" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>
                     <Button variant="outlined" className={classes.button}> View Services </Button>
                   </Link>

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
 import { commerce } from './lib/commerce';
 
 import { Products, Navbar, Testimonials, Services, HomeServices, HomeBio, Contact, MyJourney, ThankYou, Footer, ScrollToTop, Greetings, HomeTestimonials,  } from './Components';
+import './Index.css'
 
 const App = () => {
     const [products, setProducts] = useState([]);
@@ -21,7 +22,7 @@ const App = () => {
 console.log(products)
 
     return (
-        <div>
+        <div className="App">
           <Router>
             <Switch> 
              <Route path="/" exact component> <Navbar /> <Greetings/> <Products products={products}/> <HomeBio/> <HomeServices/> <HomeTestimonials/> <Footer/> </Route>

@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => {
     transform: 'rotate(180deg)',
   },
   more: {
-    fontSize: 33,
+    fontSize: 25,
   },
   carddate: {
     paddingLeft: 3,

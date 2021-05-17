@@ -30,10 +30,12 @@ const useStyles = makeStyles(theme => {
         },
         button: {
             marginTop: 25,
+            borderColor: '#8cd16f',
         },
         button2: {
             marginTop: 25,
             marginLeft: 30,
+            borderColor: '#8cd16f',
         },
     }
 })
