@@ -7,7 +7,7 @@ const useStyles = makeStyles(theme => {
            [theme.breakpoints.down("sm")]: {
             paddingTop: '25%',
           },
-           height: '100%',
+           height: '100vh',
            flexGrow: 1,
            backgroundColor: theme.palette.background.default,
        },
@@ -15,11 +15,14 @@ const useStyles = makeStyles(theme => {
            color: '#66CD00',
        },
        media: {
-           height: 280,
+           height: 250,
        },
        cardContent: {
            display: 'flex',
            justifyContent: 'space-between'
+       },
+       modal: {
+           overflow: 'scroll',
        },
     }
 })

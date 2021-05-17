@@ -3,17 +3,17 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => {
     return{
         root: {
-             marginTop: '5%',
+            marginTop: 20,
              [theme.breakpoints.down("sm")]: {
-                marginTop: '5%',
+                marginTop: 10,
               },
              textAlign: 'center',
         },
         media: {
             borderRadius: '4px',
-             height: 375,
+             height: 350,
              [theme.breakpoints.down("sm")]: {
-                height: 175,
+                height: 200,
               },
         },
         title: {

@@ -5,7 +5,7 @@ const useStyles = makeStyles(theme => {
        root: {
           flexGrow: 1,
            backgroundColor: theme.palette.background.default,
-          height: '100%',
+          height: '100vh',
            paddingTop: '10%',
            [theme.breakpoints.down("sm")]: {
             paddingTop: '30%',

@@ -82,7 +82,7 @@ const Product = ({ product }) => {
                     <Typography style={{paddingTop: 6}} body="h1">
                         Price: {product.price.formatted_with_symbol}
                     </Typography>
-                    <Button variant="contained"><Link to="/contact" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>Contact</Link></Button>
+                    <Button className={classes.button} variant="outlined"><Link to="/contact" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>Contact</Link></Button>
                 </div>     
         </Collapse>
             </CardContent>

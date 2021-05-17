@@ -45,7 +45,7 @@ const Services = () => {
            </CardContent>
         </CardActionArea>
 
-        <Modal open={open1} onClose={handleClose1}>
+        <Modal className={classes.modal} open={open1} onClose={handleClose1}>
             <SoloRead handleClose1={handleClose1}/>
         </Modal>  
 

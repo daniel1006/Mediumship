@@ -12,7 +12,7 @@ const CardDetails = props => {
 
     <Grid className={classes.root} container direction="row" justify="center" alignItems="center" spacing={3}>
 
-      <Grid item sm={10} xs={10} md={5} lg={5}>
+      <Grid item sm={11} xs={11} md={4} lg={4}>
        <Card className={classes.root}>
         <CardContent className={classes.cardContent}> 
 
@@ -22,7 +22,7 @@ const CardDetails = props => {
                            className={classes.media} />    
         <MuiThemeProvider theme={theme}>                          
          <Typography variant="h5" gutterBottom className={classes.title}> Solo Read  -<span className={classes.price}>price: $50</span></Typography>
-         <Typography className={classes.description} variant="body1">I inadvertently went to See's Candy last week (I was in the mall looking for phone repair), and as it turns out, See's Candy now charges a dollar -- a full dollar -- for even the simplest of their wee confection offerings. I bought two chocolate lollipops and two chocolate-caramel-almond things. The total cost was four-something. I mean, the candies were tasty and all, but let's be real: A Snickers bar is fifty cents. After this dollar-per-candy revelation, I may not find myself wandering dreamily back into a See's Candy any time soon.
+         <Typography className={classes.description} variant="body1">I inadvertently went to See's Candy last week (I was in the mall looking for phone repair), and as it turns out, See's Candy now charges a dollar -- a full dollar -- for even the simplest of their wee confection offerings. I bought two chocolate lollipops and two chocolate-caramel-almond things. The total cost was four-something. I mean, the candies were tasty and all, but let's be real: A Snickers bar is fifty cents. After this dollar-per-candy revelation, I may not find myself wandering dreamily.
         </Typography>
         </MuiThemeProvider> 
            

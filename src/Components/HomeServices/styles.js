@@ -44,7 +44,8 @@ const useStyles = makeStyles (theme => {
             marginTop: 32.5
         },
         button: {
-            marginTop: 32.5
+            marginTop: 32.5,
+            borderColor: '#8cd16f',
         },
     }
 })

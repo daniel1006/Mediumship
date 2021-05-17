@@ -6,6 +6,7 @@ import CloseRounded from '@material-ui/icons/CloseRounded';
 
 import useStyles from './styles';
 import HideOnScroll from './HideOnScroll';
+import './Effects.css';
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -25,11 +26,11 @@ function Navbar() {
             <ul  className={classes.list} >
                 <MuiThemeProvider theme={theme}>
                     <Typography align="center" variant="h2">
-                    <li className={classes.listItems}><Link to="/" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}> Home </Link></li>
-                     <li className={classes.listItems}><Link to="/myjourney" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}> My journey </Link></li>   
-                     <li className={classes.listItems}><Link to="/testimonials" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}> Testimonials </Link></li> 
-                     <li className={classes.listItems}><Link to="/services" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}> Services </Link></li>   
-                     <li className={classes.listItems}><Link to="/contact" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}> Contact </Link></li>    
+                    <li className="listItems"><Link className="link" to="/" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}> Home </Link></li>
+                     <li className="listItems"><Link className="link" to="/myjourney" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}> My journey </Link></li>   
+                     <li className="listItems"><Link className="link" to="/testimonials" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}> Testimonials </Link></li> 
+                     <li className="listItems"><Link className="link" to="/services" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}> Services </Link></li>   
+                     <li className="listItems"><Link className="link" to="/contact" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}> Contact </Link></li>    
                      </Typography>
                 </MuiThemeProvider>       
             </ul>

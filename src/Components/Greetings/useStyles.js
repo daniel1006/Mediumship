@@ -21,8 +21,7 @@ const useStyles = makeStyles(theme => {
         },
         title: {
          position: 'absolute',
-         color: '#83e345',
-         opacity: .8,
+         color: '#8cd16f',
         },
         title2: {
          position: 'absolute',

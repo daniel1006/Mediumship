@@ -37,6 +37,9 @@ const useStyles = makeStyles(theme => {
   cardText: {
     paddingBottom: 20,
   },
+  button: {
+    borderColor: '#8cd16f',
+  },
 
   }
 })
