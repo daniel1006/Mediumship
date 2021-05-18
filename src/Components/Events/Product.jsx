@@ -51,7 +51,7 @@ const Product = ({ product }) => {
             
         <Tooltip title="Share" arrow>
             <IconButton aria-label="share" aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
-                <ShareIcon/>
+                <ShareIcon className={classes.share}/>
             </IconButton>
         </Tooltip>
         <Menu id="simple-menu" anchorEl={anchorEl} keepMounted open={!!anchorEl} getContentAnchorEl={null} onClose={handleClose} 

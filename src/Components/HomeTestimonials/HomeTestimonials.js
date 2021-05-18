@@ -45,7 +45,7 @@ const HomeTestimonials = () => {
               <Typography className={classes.name} gutterBottom>Nenna Tiwanna, </Typography>
               <Typography className={classes.date} gutterBottom>May, 14 2021</Typography>  
               </div>
-              <Button className={classes.button} variant="outlined"><Link to="/testimonials" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}> View All </Link></Button> 
+              <Button className={classes.button} variant="outlined"><Link to="/testimonials" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}> View More </Link></Button> 
           </Grid>  
 
         </Grid>

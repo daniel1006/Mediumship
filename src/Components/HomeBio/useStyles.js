@@ -41,10 +41,10 @@ const useStyles = makeStyles(theme => {
   },
   text2: {
       textAlign: 'center',
-      marginTop: '7%',
+      marginTop: '3%',
   },
   button: {
-       marginTop: '60%',
+       marginTop: '40%',
        borderColor: '#8cd16f',
   },
 }

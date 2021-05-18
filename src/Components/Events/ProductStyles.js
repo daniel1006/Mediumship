@@ -30,6 +30,10 @@ const useStyles = makeStyles(theme => {
   },
   more: {
     fontSize: 25,
+    color: '#6d78ae',
+  },
+  share: {
+    color: '#6d78ae',
   },
   carddate: {
     paddingLeft: 3,

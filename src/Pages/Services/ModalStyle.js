@@ -2,6 +2,9 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => {
     return{
+        grid: {
+            
+        },
         root: {
             marginTop: 20,
              [theme.breakpoints.down("sm")]: {
@@ -22,6 +25,7 @@ const useStyles = makeStyles(theme => {
         price: {
             color: '#66CD00',
             marginLeft: 5,
+            marginTop: 5,
         },
         description: {
             marginTop: 20,

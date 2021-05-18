@@ -40,7 +40,6 @@ export default makeStyles((theme) => ({
   },
   list: {
     listStyleType: 'none',
-    paddingTop: '7%',
     paddingLeft: 0,
   },
   listItems: {

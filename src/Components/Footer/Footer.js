@@ -13,16 +13,16 @@ const Footer = () => {
         <Grid className={classes.root} container spacing={4}>
           
           <Grid className={classes.gridItem1} item xs={12} sm={3} md={4} lg={4}>
-               <Box borderBottom={1}>Navigation</Box>
+               <Box className={classes.header} borderBottom={1}>Navigation</Box>
                <Box className={classes.box}><Link className="footer-links" to="/">Home</Link></Box>
                <Box className={classes.box}><Link className="footer-links" to="/myjourney">My journey</Link></Box>
-               <Box className={classes.box}><Link className="footer-links" to="/testinomials">Testimonials</Link></Box>
+               <Box className={classes.box}><Link className="footer-links" to="/testimonials">Testimonials</Link></Box>
                <Box className={classes.box}><Link className="footer-links" to="/services">Services</Link></Box>
                <Box className={classes.box}><Link className="footer-links" to="/contact">Contact</Link></Box>
           </Grid>
 
           <Grid className={classes.gridItem2} item xs={12} sm={3} md={4} lg={4}>
-               <Box borderBottom={1}>Follow Me</Box>
+               <Box className={classes.header} borderBottom={1}>Follow Me</Box>
                <Box className={classes.box}><a className="footer-links" href="https://www.instagram.com/spiritualmediumclaudiaremy/" target="_blank" rel="noreferrer">Instagram</a></Box>
                <Box className={classes.box}><a className="footer-links" href="https://www.facebook.com/claudialisa.remy" target="_blank" rel="noreferrer">Facebook</a></Box>
           </Grid>

@@ -21,6 +21,10 @@ const useStyles = makeStyles(theme => {
            boxShadow: 'none',
            backgroundColor: 'transparent'
         },
+        header: {
+           fontWeight: 'bold',
+           fontSize: 22,
+        },
 }    
 })
 
