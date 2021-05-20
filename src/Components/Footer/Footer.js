@@ -2,7 +2,6 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import { Box, Grid, CardMedia, Card, Container } from '@material-ui/core';
 import useStyles from './useStyles';
-import Hummingbird from '../../Images/Hummingbird.png';
 
 import './Effects.css'
 
@@ -29,9 +28,10 @@ const Footer = () => {
 
           <Grid className={classes.gridItem1} item xs={12} sm={3} md={4} lg={4}>
                <Card className={classes.media}>
-               <CardMedia  src={Hummingbird}
-                           component="img"
-                           title="Services"/>
+               <CardMedia   component="img"
+                           image="https://previews.dropbox.com/p/thumb/ABIY8C5bXruLd4o6zgqW6OX4pOokkD7OJUO4vRq4uJydOfvnWSLD6T7HtnW2gteVPzrOonUSSJK0mrUy8MyPVrSIfsVjGgbRDotU5KPKv573smZWXbfIEfqIbcu6rL4wT2kh57qTmAdASIjH-0fwVmYUe8ROTh3AxTER6vWIHm1blldYd1Rlle52oZxyRQz2Zn3E1oCxhtYZjSw7L5KXavE76f6ULSsPizCQ0nOBdHONL_VY8j3vtdn1m1DdhD-cJO1FtU64cuIqdZmicHAq6NK8_mPDn4y215af13BwsPze1kOmxz1yOP3JqKd0rYGVZTgzqBUBN1ckC6kRPVTYKzPo7mvN45TzzbMlhBdYx24gsw/p.png?fv_content=true&size_mode=5"
+                           title="Services"
+                           />
                </Card> 
                <Box className={classes.trademark}>LanthierWebDesign &reg; {new Date().getFullYear()}</Box>
           </Grid>

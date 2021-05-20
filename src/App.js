@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
 import { commerce } from './lib/commerce';
 
-import { Products, Navbar, Testimonials, Services, HomeServices, HomeBio, Contact, MyJourney, ThankYou, Footer, ScrollToTop, Greetings, HomeTestimonials,  } from './Components';
+import { Products, Navbar, Testimonials, Services, HomeServices, HomeBio, Contact, MyJourney, ThankYou, Footer, ScrollToTop, Greetings, HomeTestimonials, Quote } from './Components';
 import './Index.css'
 
 const App = () => {
@@ -25,7 +25,7 @@ console.log(products)
         <div className="App">
           <Router>
             <Switch> 
-             <Route path="/" exact component> <Navbar /> <Greetings/> <Products products={products}/> <HomeBio/> <HomeServices/> <HomeTestimonials/> <Footer/> </Route>
+             <Route path="/" exact component> <Navbar /> <Greetings/> <Products products={products}/> <Quote/> <HomeBio/> <HomeServices/> <HomeTestimonials/> <Footer/> </Route>
 
               <Route path="/testimonials" component={Testimonials}> <Navbar /> <Testimonials/> <Footer/> </Route>
               <Route path="/services" component={Services}> <Navbar /> <Services/> <Footer/> </Route>
