@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Card, CardContent, CardActionArea, Typography, Modal, CardMedia, Container} from '@material-ui/core';
+import {Grid, Card, CardContent, CardActionArea, Typography, Modal, CardMedia, Container, Paper} from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import SoloRead from './SoloRead';
@@ -89,7 +89,9 @@ const Services = () => {
     return (
       <Container maxWidth="lg">
       <Grid className={classes.root} container direction="row" justify="space-evenly" alignItems="center" spacing={10}>
+        <Paper className={classes.paper} elevation="3">
         <Typography variant="h2">Services</Typography>
+        </Paper>
 
       <Grid  item sm={11} xs={11} md={4} lg={4}>  
       <Card>

@@ -8,9 +8,16 @@ const useStyles = makeStyles(theme => {
                 paddingTop: '25%',
            }
         },
+        paper: {
+            backgroundColor: '#6d78ae',
+            color: 'whitesmoke',
+            padding: 20,
+        },
+        grid: {
+            marginTop: '5%',
+        },
         title: {
            textAlign: 'center',
-           marginBottom: '5%',
         },
         media: {
             height: 300,

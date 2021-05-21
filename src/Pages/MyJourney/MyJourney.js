@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Card, Typography, CardMedia, Container,createMuiTheme, MuiThemeProvider, responsiveFontSizes} from '@material-ui/core';
+import {Grid, Card, Typography, CardMedia, Container,createMuiTheme, MuiThemeProvider, responsiveFontSizes, Paper} from '@material-ui/core';
 import useStyles from './useStyles';
 
 let theme = createMuiTheme();
@@ -11,12 +11,13 @@ const MyJourney = () => {
         <Container className={classes.container} maxWidth="lg">
 
        <MuiThemeProvider theme={theme}>
+       <Paper className={classes.paper} elevation="3">
          <Typography className={classes.title} variant="h2">My Journey So Far</Typography>  
-
-         <Grid container justify="center" alignItems="center" direction="row" spacing={3}>
+         </Paper>
+         <Grid className={classes.grid} container justify="center" alignItems="center" direction="row" spacing={3}>
 
           <Grid item sm={12} xs={12} md={5} lg={5}>  
-           <Grid container direction="column">
+           <Grid container direction="column">   
              <Typography body="1">My spiritual journey began in 2013. Though I’ve been sensitive to Spirit since I was a child, it was only after marriage, children and a career that my mediumship started to unfold. When you get to a point where Spirit is whispering in your ear telling you, “It’s Time!” and the universe starts sending you messages, I figured I should begin listening. My awareness to spirits as well as people’s emotions or thoughts (even the ones they didn’t know for themselves) sent me searching for answers.  I started reading everything relevant that I could get my hands on sending me on the most amazing and exciting journey ever!</Typography>
            </Grid>
           </Grid>

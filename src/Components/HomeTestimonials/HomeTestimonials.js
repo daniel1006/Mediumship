@@ -40,7 +40,7 @@ const HomeTestimonials = () => {
             </MuiThemeProvider>  
           </Grid>    
           
-          <Grid item xs={12} sm={12} md={8} lg={8}>
+          <Grid className={classes.grid3} item xs={12} sm={12} md={8} lg={8}>
               <div className={classes.dateTime}>
               <Typography className={classes.name} gutterBottom>Nenna Tiwanna, </Typography>
               <Typography className={classes.date} gutterBottom>May, 14 2021</Typography>  

@@ -11,6 +11,12 @@ const useStyles = makeStyles(theme => {
             paddingTop: '40%',
           },
        },
+       paper: {
+            color: 'whitesmoke',
+            backgroundColor: '#6d78ae',
+            color: 'whitesmoke',
+            padding: 20,
+       },
        price: {
            color: '#66CD00',
        },
