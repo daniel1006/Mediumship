@@ -2,11 +2,9 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => {
     return{
-        root: {
+        mainContainer: {
            paddingTop: '15%',
            paddingBottom: '7%',
-           height: '100%',
-           flexGrow: 1,
            [theme.breakpoints.down("sm")]: {
             paddingTop: '40%',
           },
@@ -16,6 +14,7 @@ const useStyles = makeStyles(theme => {
             backgroundColor: '#6d78ae',
             color: 'whitesmoke',
             padding: 20,
+            textAlign: 'center',
        },
        price: {
            color: '#66CD00',
@@ -25,7 +24,7 @@ const useStyles = makeStyles(theme => {
        },
        cardContent: {
            display: 'flex',
-           justifyContent: 'space-between'
+           justifyContent: 'space-between',
        },
        modal: {
            overflow: 'scroll',
@@ -33,7 +32,7 @@ const useStyles = makeStyles(theme => {
        more: {
            fontSize: 38,
            color: '#6d78ae',
-       }
+       },
     }
 })
 

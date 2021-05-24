@@ -21,10 +21,10 @@ const GroupRead = props => {
                            title="Services"
                            className={classes.media} />    
         <MuiThemeProvider theme={theme}>                          
-         <Typography variant="h4" gutterBottom className={classes.title}> Group Reading (4-6 people)<Typography variant="h5" className={classes.price} gutterBottom>price: $60</Typography>
+         <Typography variant="h4" gutterBottom className={classes.title}> Group Reading (4-10 people)<Typography variant="h5" className={classes.price} gutterBottom>price: $60</Typography>
          <Typography variant="h6">Per Individual</Typography>
          </Typography>
-         <Typography className={classes.description} variant="body1">I inadvertently went to See's Candy last week (I was in the mall looking for phone repair), and as it turns out, See's Candy now charges a dollar -- a full dollar -- for even the simplest of their wee confection offerings. I bought two chocolate lollipops and two chocolate-caramel-almond things. The total cost was four-something. I mean, the candies were tasty and all, but let's be real: A Snickers bar is fifty cents. After this dollar-per-candy revelation, I may not find myself wandering dreamily.
+         <Typography className={classes.description} variant="body1">There’s a lot of laughter and love at these events! Gather a group of family or friends together and connect with your loved ones, privately or in a group setting.
         </Typography>
         </MuiThemeProvider> 
            

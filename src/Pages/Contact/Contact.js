@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import clsx from 'clsx';
-import { TextField, Button, Grid, Typography, createMuiTheme, MuiThemeProvider, responsiveFontSizes, CardMedia, Card, CircularProgress } from '@material-ui/core';
+import { TextField, Button, Grid, Typography, createMuiTheme, MuiThemeProvider, responsiveFontSizes, CardMedia, Card, CircularProgress, Container } from '@material-ui/core';
 import useStyles from './useStyles';
 import { useForm } from 'react-hook-form';
 import { init, sendForm } from 'emailjs-com';
@@ -54,7 +53,8 @@ const Contact = () => {
 
       
     return (
-        <Grid className={classes.root} container direction="row" justify="space-evenly" alignItems="center" spacing={3}>
+      <Container className={classes.container} maxWidth="lg">
+        <Grid className={classes.root} container direction="row" justify="space-around" alignItems="center" spacing={3}>
           
           <Grid item sm={11} xs={11} md={5} lg={5}>
           <Card>
@@ -73,6 +73,7 @@ const Contact = () => {
            </Typography>
           </MuiThemeProvider> 
 
+          <Grid className={classes.grid3} item sm={12} xs={12} md={12} lg={12}> 
          <form className={classes.form}
                id='Claudia_Mediumship'
                lassName="form" 
@@ -131,8 +132,10 @@ const Contact = () => {
                 </div>
 
                </form>
+             </Grid>  
        </Grid>        
        </Grid>
+    </Container>   
     )
 }
 

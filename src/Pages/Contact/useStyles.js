@@ -8,10 +8,9 @@ const useStyles = makeStyles(theme => {
            paddingTop: '10%',
            [theme.breakpoints.down("sm")]: {
             paddingTop: '30%',
-            marginBottom: '75%',
+            marginBottom: '120%',
           }, 
           [theme.breakpoints.down("xs")]: {
-            marginBottom: '175%',
           }, 
         },
         title1: {
@@ -21,32 +20,31 @@ const useStyles = makeStyles(theme => {
           }
         },
         title2: {
-            marginBottom: 20,
             textAlign: 'center',
-            position: 'absolute',
+            marginBottom: 20,
         },
         textInput: {
            width: 350,
-           [theme.breakpoints.down("sm")]: {
-            width: '100%',
-       },
            marginTop: 20,
         },
         media: {
             height: 350,
         },
+        grid3: {
+           justifyContent: 'right',
+        },
         form: {
            display: 'flex',
            flexDirection: 'column',
-           justifyContent: 'space-between',
-           alignItems: 'center'
+           justifyContent: 'right',
+           alignItems: 'center',
         },
         message: {
            width: 500,
-           [theme.breakpoints.down("sm")]: {
-            width: '100%',
-       },
            marginTop: 20,
+           [theme.breakpoints.down("sm")]: {
+            width: 350,
+         },
         },
         button: {
            marginTop: 20,

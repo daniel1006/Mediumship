@@ -9,6 +9,8 @@ import CorporateEvents from './CorporateEvents';
 import Functions from './Functions';
 import Teachings from './Teachings';
 import WorkShops from './WorkShops';
+import TwoPersonRead from './TwoPersonRead';
+import Fundraisers from './Fundraisers';
 
 import useStyles from './ServiceStyle';
 
@@ -84,17 +86,40 @@ const Services = () => {
   const handleClose7 = () => {
     setOpen7(false);
   };
+//
+const [open8, setOpen8] = React.useState(false);
+
+const handleOpen8 = () => {
+  setOpen8(true);
+};
+
+const handleClose8 = () => {
+  setOpen8(false);
+};
+//
+const [open9, setOpen9] = React.useState(false);
+
+const handleOpen9 = () => {
+  setOpen9(true);
+};
+
+const handleClose9 = () => {
+  setOpen9(false);
+};
 
 
     return (
       <Container maxWidth="lg">
-      <Grid className={classes.root} container direction="row" justify="space-evenly" alignItems="center" spacing={10}>
+      <Grid className={classes.mainContainer} container justify="center" alignItems="center" spacing={5}>
+
+      <Grid  item sm={12} xs={12} md={12} lg={12}>  
         <Paper className={classes.paper} elevation="3">
         <Typography variant="h2">Services</Typography>
         </Paper>
+      </Grid>  
 
-      <Grid  item sm={11} xs={11} md={4} lg={4}>  
-      <Card>
+      <Grid item sm={12} xs={12} md={5} lg={5}>  
+      <Card> 
         <CardActionArea onClick={handleOpen1}>  
           <CardMedia component="img"
                            image="https://images.unsplash.com/photo-1520783077-5c05dd1fdc99?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
@@ -113,7 +138,28 @@ const Services = () => {
        </Card> 
       </Grid>
 
-      <Grid item sm={11} xs={11} md={4} lg={4}>   
+      <Grid item sm={12} xs={12} md={5} lg={5}>   
+       <Card>
+        <CardActionArea onClick={handleOpen8}>  
+          <CardMedia component="img"
+                           image="https://images.unsplash.com/photo-1505455184862-554165e5f6ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                           title="Services"
+                           className={classes.media} />
+           <CardContent className={classes.cardContent}>
+            <Typography variant="h5">Two Person Reading</Typography> 
+            <ExpandMoreIcon className={classes.more} onClick={handleOpen8}/>
+           </CardContent>
+        </CardActionArea>
+
+        <Modal className={classes.modal} open={open8} onClick={handleClose8}>
+            <TwoPersonRead handleClose8={handleClose8}/>
+        </Modal>  
+
+       </Card> 
+      </Grid>
+
+
+      <Grid item sm={12} xs={12} md={5} lg={5}>   
        <Card>
         <CardActionArea onClick={handleOpen2}>  
           <CardMedia component="img"
@@ -121,7 +167,7 @@ const Services = () => {
                            title="Services"
                            className={classes.media} />
            <CardContent className={classes.cardContent}>
-            <Typography variant="h5">Group Reading</Typography> 
+            <Typography variant="h5">Private Group Reading</Typography> 
             <ExpandMoreIcon className={classes.more} onClick={handleOpen2}/>
            </CardContent>
         </CardActionArea>
@@ -133,7 +179,7 @@ const Services = () => {
        </Card> 
       </Grid>
 
-      <Grid item sm={11} xs={11} md={4} lg={4}>   
+      <Grid item sm={12} xs={12} md={5} lg={5}>   
        <Card>
         <CardActionArea onClick={handleOpen3}>  
           <CardMedia component="img"
@@ -153,7 +199,7 @@ const Services = () => {
        </Card> 
       </Grid>
 
-      <Grid item sm={11} xs={11} md={4} lg={4}>   
+      <Grid item sm={12} xs={12} md={5} lg={5}>   
        <Card>
         <CardActionArea onClick={handleOpen4}>  
           <CardMedia component="img"
@@ -173,7 +219,7 @@ const Services = () => {
        </Card> 
       </Grid>
 
-      <Grid item sm={11} xs={11} md={4} lg={4}>   
+      <Grid item sm={12} xs={12} md={5} lg={5}>   
        <Card>
         <CardActionArea onClick={handleOpen5}>  
           <CardMedia component="img"
@@ -193,7 +239,27 @@ const Services = () => {
        </Card> 
       </Grid>
 
-      <Grid item sm={11} xs={11} md={4} lg={4}>   
+      <Grid  item sm={12} xs={12} md={5} lg={5}>  
+      <Card>
+        <CardActionArea onClick={handleOpen9}>  
+          <CardMedia component="img"
+                           image="https://images.unsplash.com/uploads/14122810486321888a497/1b0cc699?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80"
+                           title="Services"
+                           className={classes.media} />
+           <CardContent className={classes.cardContent}>
+            <Typography variant="h5">Fundraisers</Typography> 
+            <ExpandMoreIcon className={classes.more} onClick={handleOpen9}/>
+           </CardContent>
+        </CardActionArea>
+
+        <Modal className={classes.modal} open={open9} onClick={handleClose9}>
+            <Fundraisers handleClose9={handleClose9}/>
+        </Modal>  
+
+       </Card> 
+      </Grid>
+
+      <Grid item sm={12} xs={12} md={5} lg={5}>   
        <Card>
         <CardActionArea onClick={handleOpen6}>  
           <CardMedia component="img"
@@ -213,7 +279,7 @@ const Services = () => {
        </Card> 
       </Grid>
 
-      <Grid item sm={11} xs={11} md={4} lg={4}>   
+      <Grid item sm={12} xs={12} md={5} lg={5}>   
        <Card>
         <CardActionArea onClick={handleOpen7}>  
           <CardMedia component="img"

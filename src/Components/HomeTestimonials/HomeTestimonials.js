@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import { Container, Avatar, Grid, Typography, createMuiTheme, MuiThemeProvider, responsiveFontSizes, Button, Box } from '@material-ui/core';
+import { Container, Avatar, Grid, Typography, createMuiTheme, MuiThemeProvider, responsiveFontSizes, Button, } from '@material-ui/core';
 import useStyles from './useStyles';
 
 let theme = createMuiTheme();
@@ -9,21 +9,6 @@ theme = responsiveFontSizes(theme);
 
 const HomeTestimonials = () => {
     const classes = useStyles();
-
-    const quotes = {
-       
-       1: {
-        client: "Mari Provan-Strauss",
-        date: "February, 11 2020",
-        quote: "By far the most accurate and amazing medium I have ever had a reading from.",
-    },
-    2: {
-        client: "Jaimie Rankin",
-        date: "February, 23 2019",
-        quote: "Claudia had some very accurate insight through her reading with me! Amazing experience.",
-    }
-    }
-
 
     return (
         <Container className={classes.container} maxWidth="lg">
@@ -43,7 +28,7 @@ const HomeTestimonials = () => {
           <Grid className={classes.grid3} item xs={12} sm={12} md={8} lg={8}>
               <div className={classes.dateTime}>
               <Typography className={classes.name} gutterBottom>Nenna Tiwanna, </Typography>
-              <Typography className={classes.date} gutterBottom>May, 14 2021</Typography>  
+              <Typography className={classes.date} gutterBottom>May 14, 2021</Typography>  
               </div>
               <Button className={classes.button} variant="outlined"><Link to="/testimonials" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}> View More </Link></Button> 
           </Grid>  
