@@ -13,6 +13,10 @@ const useStyles = makeStyles(theme => {
           [theme.breakpoints.down("xs")]: {
           }, 
         },
+        card: {
+            backgroundColor: 'transparent',
+            boxShadow: 'none',
+        },
         title1: {
             textAlign: 'center',
             [theme.breakpoints.down("sm")]: {
@@ -27,8 +31,9 @@ const useStyles = makeStyles(theme => {
            width: 350,
            marginTop: 20,
         },
-        media: {
+        birdMedia: {
             height: 350,
+            backgroundColor: 'transparent'
         },
         grid3: {
            justifyContent: 'right',

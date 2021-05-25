@@ -74,8 +74,7 @@ const Product = ({ product }) => {
                <ExpandMoreIcon className={classes.more} />
             </IconButton>
         </Tooltip>
-        
-        
+            
         <Collapse in={expanded} timeout="auto" unmountOnExit >
             <Typography dangerouslySetInnerHTML={{ __html: product.description }} color="textSecondary" className={classes.cardText}/>
                 <div className={classes.cardContent}>

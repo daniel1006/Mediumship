@@ -18,9 +18,9 @@ const Products = ({ products }) => {
         <Typography align="center" variant="h2" className={classes.upComingTitle}> Upcoming events</Typography>
         </MuiThemeProvider>
 
-        <Grid container direction="row" justify="space-evenly" alignItems="center" spacing={3}>
+        <Grid container direction="row" justify="space-evenly" alignItems="center" spacing={5}>
              {products.map((product) => (
-                 <Grid item key={product.id} sm={12} xs={12} md={4} lg={3}>
+                 <Grid item key={product.id} sm={12} xs={12} md={4} lg={4}>
                       <Product product={product} />
                  </Grid>
              ))}

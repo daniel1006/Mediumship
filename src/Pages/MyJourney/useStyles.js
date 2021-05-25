@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => {
     return{
         container: {
-            paddingTop: '15%',
+            paddingTop: '10%',
             [theme.breakpoints.down("sm")]: {
                 paddingTop: '25%',
            }

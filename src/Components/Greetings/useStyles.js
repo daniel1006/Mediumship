@@ -19,6 +19,15 @@ const useStyles = makeStyles(theme => {
         media: {
             height: '100vh',
         },
+        media2: {
+            position: 'absolute',
+            backgroundColor: 'transparent',
+            width: 225,
+            height: 225,
+            display: 'inline-block',
+            left: 15,
+            top: 15,
+        },
         title: {
          position: 'absolute',
          color: '#8cd16f',

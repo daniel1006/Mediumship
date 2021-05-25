@@ -57,11 +57,11 @@ const Contact = () => {
         <Grid className={classes.root} container direction="row" justify="space-around" alignItems="center" spacing={3}>
           
           <Grid item sm={11} xs={11} md={5} lg={5}>
-          <Card>
+          <Card className={classes.card}>
           <CardMedia   component="img"
-                           image="https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+                           image="https://previews.dropbox.com/p/thumb/ABIY8C5bXruLd4o6zgqW6OX4pOokkD7OJUO4vRq4uJydOfvnWSLD6T7HtnW2gteVPzrOonUSSJK0mrUy8MyPVrSIfsVjGgbRDotU5KPKv573smZWXbfIEfqIbcu6rL4wT2kh57qTmAdASIjH-0fwVmYUe8ROTh3AxTER6vWIHm1blldYd1Rlle52oZxyRQz2Zn3E1oCxhtYZjSw7L5KXavE76f6ULSsPizCQ0nOBdHONL_VY8j3vtdn1m1DdhD-cJO1FtU64cuIqdZmicHAq6NK8_mPDn4y215af13BwsPze1kOmxz1yOP3JqKd0rYGVZTgzqBUBN1ckC6kRPVTYKzPo7mvN45TzzbMlhBdYx24gsw/p.png?fv_content=true&size_mode=5"
                            title="Services"
-                           className={classes.media} />
+                           className={classes.birdMedia} />
           </Card>                 
           </Grid>
           

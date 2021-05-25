@@ -19,8 +19,6 @@ const App = () => {
         fetchProducts();
    }, []);
 
-console.log(products)
-
     return (
         <div className="App">
           <Router>
