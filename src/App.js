@@ -19,6 +19,7 @@ const App = () => {
         fetchProducts();
    }, []);
 
+
     return (
         <div className="App">
           <Router>
