@@ -24,8 +24,7 @@ const Fundraisers = props => {
          <Typography variant="h4" gutterBottom className={classes.title}> Fundraisers <Typography variant="h5" className={classes.price} gutterBottom>price: $60</Typography>
          <Typography variant="h6">Per Individual</Typography>
          </Typography>
-         <Typography className={classes.description} variant="body1">There’s a lot of laughter and love at these events! Gather a group of family or friends together and connect with your loved ones, privately or in a group setting.
-        </Typography>
+         <Typography className={classes.description} variant="body1"></Typography>
         </MuiThemeProvider> 
            
          <Button className={classes.button} variant="outlined" size="large" onClick={props.handleClose9}>Close</Button>

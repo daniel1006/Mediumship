@@ -5,7 +5,7 @@ import clsx from 'clsx';
 import useStyles from './useStyles';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-const Testimonials = props => {
+const Testimonials = () => {
     const classes = useStyles();
 
     //More button
@@ -55,7 +55,7 @@ const Testimonials = props => {
           <Grid container direction="column">   
           <Card className={classes.card1}>
 
-        <Typography className={classes.name} gutterBottom> The Northcott </Typography> 
+        <Typography className={classes.name} gutterBottom> The Northcott, 2021 </Typography> 
 
             <div className={classes.TextAvatar}>
               <Typography variant="h6" gutterBottom><span className={classes.quotation}>"</span>There is one constant in life .... we will all experience a loss...<span className={classes.quotation}>"</span></Typography>

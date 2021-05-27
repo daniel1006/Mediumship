@@ -22,6 +22,7 @@ const App = () => {
 
     return (
         <div className="App">
+          <div className="">
           <Router>
             <Switch> 
              <Route path="/" exact component> <Navbar /> <Greetings/> <Products products={products}/> <Quote/> <HomeBio/> <HomeServices/> <HomeTestimonials/> <Footer/> </Route>
@@ -34,7 +35,8 @@ const App = () => {
             </Switch>
             <ScrollToTop/>
           </Router>
-        </div>
+          </div>
+          </div>
     )
 }
 

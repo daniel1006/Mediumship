@@ -52,9 +52,9 @@ const HomeTestimonials = () => {
 
         </Swiper>
         </Card>
+        <Button className={classes.button} size="large" variant="outlined"><Link to="/testimonials" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}> View More </Link></Button> 
         </Grid>
 
-        <Button className={classes.button} size="large" variant="outlined"><Link to="/testimonials" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}> View More </Link></Button> 
        </Grid>
     </Container>
    

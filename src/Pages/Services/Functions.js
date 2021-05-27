@@ -24,8 +24,7 @@ const Functions = props => {
          <Typography variant="h4" gutterBottom className={classes.title}>Functions, private & public<Typography variant="h5" className={classes.price} gutterBottom>price: $80+</Typography>
          <Typography variant="h6">Price is dependent on platform size and space</Typography>
          </Typography>
-         <Typography className={classes.description} variant="body1">I inadvertently went to See's Candy last week (I was in the mall looking for phone repair), and as it turns out, See's Candy now charges a dollar -- a full dollar -- for even the simplest of their wee confection offerings. I bought two chocolate lollipops and two chocolate-caramel-almond things. The total cost was four-something. I mean, the candies were tasty and all, but let's be real: A Snickers bar is fifty cents. After this dollar-per-candy revelation, I may not find myself wandering dreamily.
-        </Typography>
+         <Typography className={classes.description} variant="body1"></Typography>
         </MuiThemeProvider> 
            
          <Button className={classes.button} variant="outlined" size="large" onClick={props.handleClose5}>Close</Button>

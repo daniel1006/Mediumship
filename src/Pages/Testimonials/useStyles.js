@@ -29,7 +29,7 @@ const useStyles = makeStyles (theme => {
            height: 54,
            width: 54,
            fontSize: 26,
-           backgroundColor: '#6d78ae',
+           backgroundColor:'#8cd16f',
            color: 'whitesmoke',
            marginLeft: 15,
        },

@@ -4,6 +4,7 @@ const useStyles = makeStyles(theme => {
    return {
        root: {
            paddingTop: '15%',
+           paddingBottom: '10%',
         },
         link: {
             color:"rgba(0, 0, 0, 0.87)", 

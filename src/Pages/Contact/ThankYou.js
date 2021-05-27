@@ -17,7 +17,7 @@ const ThankYou = () => {
             <Card className={classes.container}>
 
             <CardMedia  component="img"
-                           src="https://images.unsplash.com/photo-1493918767339-f968bf7bfd70?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
+                           src="https://images.unsplash.com/photo-1538859947109-a81f6eb1945d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
                            title="Services"
                            className={classes.media2} /> 
 

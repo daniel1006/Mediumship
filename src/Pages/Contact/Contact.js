@@ -29,7 +29,7 @@ const Contact = () => {
 
       // loading animation
 
-      const [loading, setLoading] = React.useState(false);
+  const [loading, setLoading] = React.useState(false);
   const [success, setSuccess] = React.useState(false);
   const timer = React.useRef();
 

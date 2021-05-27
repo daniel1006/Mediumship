@@ -21,7 +21,7 @@ const useStyles = makeStyles (theme => {
            height: 62,
            width: 62,
            fontSize: 32,
-           backgroundColor: 'grey',
+           backgroundColor: '#6d78ae',
            color: 'whitesmoke',
            marginLeft: 15,
            [theme.breakpoints.down("sm")]: {

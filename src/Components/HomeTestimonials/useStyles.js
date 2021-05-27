@@ -6,7 +6,6 @@ const useStyles = makeStyles (theme => {
              paddingTop: 150,
         },
         mainCard: {
-          
        },
         title: {
             textAlign: 'center',
@@ -14,6 +13,7 @@ const useStyles = makeStyles (theme => {
         button: {
             marginTop: 15,
             borderColor: '#8cd16f',
+
         },
     }
 })
