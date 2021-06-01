@@ -6,9 +6,9 @@ const useStyles = makeStyles(theme => {
             
         },
         root: {
-            marginTop: 20,
+            marginTop: '50%',
              [theme.breakpoints.down("sm")]: {
-                marginTop: 10,
+                marginTop: '20%',
               },
              textAlign: 'center',
         },
