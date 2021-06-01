@@ -26,7 +26,7 @@ const MyJourney = () => {
            <Grid container direction="column">
              <Card>
               <CardMedia   component="img"
-                           image="https://previews.dropbox.com/p/thumb/ABL_I9vohDwyNtNz38bmOejDXMcoY8rEqFJNRImNJ_51IvvX-prhFfkotWPhDUT3j1uObISed4sIqe-8_bO-DwZes4ETeoG3B_b8OZZp3x3qhGdOggjh58_S53R7qFeUI6AsNEZ75LctZz4DSfpjyx-4_HDtaEcB1Dlys1J_IqYx_KCDgB7_b_ftbO-jU8hmbkTE4WzvnEL581Z9xybKZpEoD_SjRMHQz3k7FwAIgGDXZ9JUHuK_-47jYhtplAHgBeaA84MYC-uzqei-3j5uws2Sa9XNlJn2vj94ToPxB6hargRqX8C3RvbsW0B2KoaTg1EJaREC8XPWnzM_oqJCACsvCYToVWrae-2KrztZyus6sA/p.jpeg?fv_content=true&size_mode=5"
+                           image="https://dl.dropboxusercontent.com/s/umlepvny8165t4d/unnamed-1.jpg?dl=0"
                            title="Services"
                            className={classes.media} />
              </Card>

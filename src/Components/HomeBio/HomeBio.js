@@ -4,14 +4,6 @@ import { Grid, Card, CardMedia, CardContent, Typography, Button, Container } fro
 
 import useStyles from './useStyles'
 
-const styles = {
-  root: {
-    "& .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-3.MuiGrid-align-items-xs-center.MuiGrid-justify-xs-space-evenly": {
-      width: 'auto',
-      margin: 'auto'
-   }
-  }
-};
 
 const HomeBio = () => {
     const classes = useStyles();
@@ -24,7 +16,7 @@ const HomeBio = () => {
            <Card className={classes.card}>
            <CardContent className={classes.content} >
               <CardMedia   component="img"
-                           image="https://previews.dropbox.com/p/thumb/ABLoq6ut3-3nzh7_8U8QnVT11B87AvIHiyyXzktX-myOqBmQtBeb7ZkQv-_ndTfNRpYYqataEFPH5f3GbEffjlvd4Y9gOAGQgNOfstbnewDabr2RFj9mHaFm1DQPtjEkOUN-Y9Uh3b8QBnAt4vmCK5TJjuwpvNzjHcDCTdpXvhjlYb4JZzBUsUo68hNxIEE52dfs7VNi8Z7BUVCCBbnCeYZLdXQNk-N3wh0KAzgz3j8WZLqtq_czaP-4QHSTWGfyx8KDMsTgws7tgAzsx-YuzxxYB1CA29tOd8rXZXxieFOxtfUDl5AXEsvwScCBwvOdVPsLLQ706IPC3_WcCYsiu9Nss5huDSuCqAm5IBYe370mJQ/p.jpeg?fv_content=true&size_mode=5"
+                           image="https://dl.dropboxusercontent.com/s/zlhzeftkp030v8r/processed.jpeg?dl=0"
                            title="Services"
                            className={classes.media} />
             </CardContent>            

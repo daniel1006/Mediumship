@@ -45,7 +45,7 @@ const Product = ({ product }) => {
             <CardContent >
 
              <div>
-              <Typography variant="h5" gutterBottom> { product.name } </Typography>
+              <Typography className={classes.eventName} variant="h5" gutterBottom> { product.name } </Typography>
               <Typography className={classes.carddate} variant="h7" gutterBottom> {product.seo.title} </Typography>
             </div>
             
@@ -76,12 +76,12 @@ const Product = ({ product }) => {
         </Tooltip>
             
         <Collapse in={expanded} timeout="auto" unmountOnExit >
-            <Typography dangerouslySetInnerHTML={{ __html: product.description }} color="textSecondary" className={classes.cardText}/>
+            <Typography dangerouslySetInnerHTML={{ __html: product.description }} color="white" className={classes.cardText}/>
                 <div className={classes.cardContent}>
-                    <Typography style={{paddingTop: 6}} body="h1">
+                    <Typography style={{paddingTop: 6, color: 'white',}} body="h1">
                         Price: {product.price.formatted_with_symbol}
                     </Typography>
-                    <Button className={classes.button} variant="outlined"><Link to="/contact" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>Contact</Link></Button>
+                    <Button className={classes.button} variant="outlined"><Link to="/contact" style={{color:"white", textDecoration: "none"}}>Contact</Link></Button>
                 </div>     
         </Collapse>
             </CardContent>

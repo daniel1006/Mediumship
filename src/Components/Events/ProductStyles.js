@@ -4,7 +4,7 @@ const useStyles = makeStyles(theme => {
   return {
     card: {
       height: '100%',
-      backgroundColor: 'rgb(255,255,255, .8)',
+      backgroundColor: 'rgb(128,128,128, .7)',
     },
     media: {
       height: 0,
@@ -31,19 +31,25 @@ const useStyles = makeStyles(theme => {
   },
   more: {
     fontSize: 25,
-    color: '#6d78ae',
+    color: '#8cd16f',
   },
   share: {
-    color: '#6d78ae',
+    color: '#8cd16f',
+  },
+  eventName: {
+    color: 'white',
   },
   carddate: {
     paddingLeft: 3,
+    color: 'white',
   },
   cardText: {
     paddingBottom: 20,
+    color: 'white',
   },
   button: {
     borderColor: '#8cd16f',
+    borderWidth: '3px',
   },
 
   }

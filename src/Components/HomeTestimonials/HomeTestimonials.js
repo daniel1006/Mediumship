@@ -6,6 +6,7 @@ import useStyles from './useStyles';
 import Quote1 from './Quote1';
 import Quote2 from './Quote2';
 import Quote3 from './Quote3';
+import Quote4 from './Quote4';
 
 import { Swiper, SwiperSlide,  } from "swiper/react";
 // Import Swiper styles
@@ -45,10 +46,11 @@ const HomeTestimonials = () => {
                  watchSlidesProgress 
                  navigation={true} 
                  className="mySwiper">
-           
+
            <SwiperSlide> <Quote2/> </SwiperSlide>
            <SwiperSlide> <Quote3/> </SwiperSlide>
            <SwiperSlide> <Quote1/> </SwiperSlide>
+           <SwiperSlide> <Quote4/> </SwiperSlide>
 
         </Swiper>
         </Card>
