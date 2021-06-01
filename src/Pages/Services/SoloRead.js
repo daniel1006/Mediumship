@@ -27,10 +27,10 @@ const SoloRead = props => {
          <Typography className={classes.description} variant="body1">I inadvertently went to See's Candy last week (I was in the mall looking for phone repair), and as it turns out, See's Candy now charges a dollar -- a full dollar -- for even the simplest of their wee confection offerings. I bought two chocolate lollipops and two chocolate-caramel-almond things. The total cost was four-something. I mean, the candies were tasty and all, but let's be real: A Snickers bar is fifty cents. After this dollar-per-candy revelation, I may not find myself wandering dreamily.
         </Typography>
         </MuiThemeProvider> 
-           
+        
          <Button className={classes.button} variant="outlined" size="large" onClick={props.handleClose1}>Close</Button>
-         <Button className="button2" variant="outlined" size="large"><Link to="/contact" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>Contact</Link></Button>
-
+         <Button className={classes.button2} variant="outlined" size="large"><Link to="/contact" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>Contact</Link></Button>
+    
         </CardContent>  
        </Card>                
       </Grid>

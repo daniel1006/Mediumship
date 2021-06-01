@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <Container  maxWidth="lg">  
         
-        <Grid className={classes.root} alignContent="center" justify="center" container spacing={5}>
+        <Grid className={classes.root} alignContent="center" justify="center" container spacing={3}>
           
           <Grid className={classes.gridItem1} item xs={12} sm={12} md={6} lg={6}>
                <Box className={classes.header} borderBottom={1}><Typography variant="h5">Navigation</Typography></Box>

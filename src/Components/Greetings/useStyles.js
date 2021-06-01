@@ -32,6 +32,9 @@ const useStyles = makeStyles(theme => {
          position: 'absolute',
          color: '#8cd16f',
          paddingBottom: '28%',
+         [theme.breakpoints.down("sm")]: {
+            fontSize: '46px',
+       },
        [theme.breakpoints.down("xs")]: {
          paddingBottom: '120%',
          textAlign: 'center'

@@ -32,16 +32,25 @@ const useStyles = makeStyles(theme => {
             padding: 10,
             backgroundColor: 'lightgrey',
         },
+        buttonGroup: {
+            
+        },
         button: {
             marginTop: 25,
             borderColor: '#6d78ae',
             borderWidth: '3px',
+            [theme.breakpoints.down("sm")]: {
+                fontSize: '11.5px',
+              },
         },
         button2: {
             marginTop: 25,
             marginLeft: 30,
             borderColor: '#6d78ae',
             borderWidth: '3px',
+            [theme.breakpoints.down("sm")]: {
+                fontSize: '11.5px',
+              },
         },
     }
 })
