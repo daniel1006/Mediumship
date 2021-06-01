@@ -1,13 +1,10 @@
 .App {
    background-color: rgb(0, 0, 0);
    background-image: url("https://dl.dropboxusercontent.com/s/x9xz5pczy5lcn85/hummingbird%203%20see%20through.png?dl=0"); 
+   background-repeat: no-repeat;
+   background-position: center center;
    background-attachment: fixed;
-   background-repeat:no-repeat;
--webkit-background-size:cover;
--moz-background-size:cover;
--o-background-size:cover;
-background-size:cover;
-background-position:center;
+   background-size: 100%;
 }
 
 body {
