@@ -15,15 +15,23 @@ const useStyles = makeStyles(theme => {
         },
         grid: {
             marginTop: '5%',
+            paddingTop: '3%',
+            paddingBottom: '3%',
+            backgroundColor: 'rgb(128,128,128, .8)',
+            borderRadius: '3px',
         },
         title: {
            textAlign: 'center',
+        },
+        text: {
+            color: 'white',
         },
         media: {
             height: 300,
         },
         ending: {
             marginTop: 15,
+            color: 'white',
         },
         button: {
             fontSize: 22,

@@ -20,6 +20,11 @@ export default makeStyles((theme) => ({
   },
   menu: {
      fontSize: 62,
+     color: 'whitesmoke',
+  },
+  menuX: {
+    fontSize: 62,
+    color: 'black',
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -29,6 +34,7 @@ export default makeStyles((theme) => ({
   },
   drawer: {
     height: '100vh',
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
   },
   closeDrawer: {
     display: 'flex',

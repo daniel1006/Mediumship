@@ -9,12 +9,18 @@ const useStyles = makeStyles(theme => {
             paddingTop: '40%',
           },
        },
+       cardBackground: {
+           backgroundColor: 'rgb(128,128,128, .7)',
+       },
        paper: {
             color: 'whitesmoke',
             backgroundColor: '#6d78ae',
             color: 'whitesmoke',
             padding: 20,
             textAlign: 'center',
+       },
+       eventName: {
+           color: 'white',
        },
        price: {
            color: '#66CD00',
@@ -31,7 +37,7 @@ const useStyles = makeStyles(theme => {
        },
        more: {
            fontSize: 38,
-           color: '#6d78ae',
+           color: '#8cd16f',
        },
     }
 })

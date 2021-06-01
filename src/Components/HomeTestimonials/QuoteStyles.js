@@ -2,15 +2,15 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles (theme => {
     return {
-        card1: {
+        root: {
             paddingTop: '5%',
             paddingLeft: '5%',
             paddingRight: '5%',
             paddingBottom: '3%',
             textAlign: 'left',
-            height: '100%',
-            border: 'none',
             boxShadow: 'none',
+            height: '100%',
+            backgroundColor: 'transparent',
         },
        TextAvatar: {
            display: 'flex',

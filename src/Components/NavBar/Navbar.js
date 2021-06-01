@@ -19,7 +19,7 @@ function Navbar() {
         <div className={classes.drawer} onClick={() => setOpen(false)}>
             <div>
             <IconButton onClick={() => setOpen(false)} className={classes.closeDrawer}> 
-               <CloseRounded className={classes.menu}/> 
+               <CloseRounded className={classes.menuX}/> 
             </IconButton>
             </div>
 

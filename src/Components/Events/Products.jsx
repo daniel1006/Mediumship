@@ -15,10 +15,10 @@ const Products = ({ products }) => {
         <div className={classes.toolbar} />
 
         <MuiThemeProvider theme={theme}>
-        <Typography align="center" variant="h2" className={classes.upComingTitle}> Upcoming events</Typography>
+        <Typography align="center" variant="h1" className={classes.upComingTitle}> Upcoming events</Typography>
         </MuiThemeProvider>
 
-        <Grid container direction="row" justify="space-evenly" alignItems="center" spacing={5}>
+        <Grid container direction="row" justify="space-evenly" alignItems="center" spacing={3}>
              {products.map((product) => (
                  <Grid item key={product.id} sm={12} xs={12} md={4} lg={4}>
                       <Product product={product} />

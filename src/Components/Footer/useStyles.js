@@ -4,18 +4,19 @@ const useStyles = makeStyles(theme => {
    return {
        root: {
            paddingTop: '15%',
-           paddingBottom: '10%',
+           color: 'white'
         },
         link: {
-            color:"rgba(0, 0, 0, 0.87)", 
+            color:"white", 
             textDecoration: "none",
         },
         box: {
             marginTop: 10,
         },
         trademark: {
-            textAlign: 'center',
-           paddingTop: 10,
+           marginTop: '6%',
+           marginBottom: 20,
+           marginRight: 0,
         },
         media: {
             border: 'none',

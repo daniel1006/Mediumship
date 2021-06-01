@@ -4,6 +4,7 @@ const useStyles = makeStyles(theme => {
   return {
     card: {
       height: '100%',
+      backgroundColor: 'rgb(255,255,255, .8)',
     },
     media: {
       height: 0,

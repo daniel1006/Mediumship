@@ -24,7 +24,7 @@ const HomeBio = () => {
            <Card className={classes.card}>
            <CardContent className={classes.content} >
               <CardMedia   component="img"
-                           image="https://previews.dropbox.com/p/thumb/ABJ4VtLLiLccsjzoT9R2VawQwAtAXW3bstxubZt8x2E93QPgczjb2Q3mWJC-Kp4rsNZvM2MlnwA34BJ08EuQ41AsAAHzc8nN3kk4BAQuEP3F_i7L7lWRnCWnTMPZPVlbM00pxRTuA0PCJrWQoNM6kOXQ63XewNvrXymMzrTperb7439SAFwSQUHeYz0tv9fp_FJD4fxTGrwdZ0l2DITwJcahyiJPEI1Dk-O0EbofvQmwIVbp1xY-K-_YL-iwyY5cbZcfGZa2zmCZGK_WGVOmwi57ciJusWBHl9nnLzML2t4IWeu6JsVKJwA9AaG6xYn86brHXYIQNboFaWChQH_Y04UvZX5o2_Gx7dl3K0Vk1JXOYA/p.jpeg?fv_content=true&size_mode=5"
+                           image="https://previews.dropbox.com/p/thumb/ABLoq6ut3-3nzh7_8U8QnVT11B87AvIHiyyXzktX-myOqBmQtBeb7ZkQv-_ndTfNRpYYqataEFPH5f3GbEffjlvd4Y9gOAGQgNOfstbnewDabr2RFj9mHaFm1DQPtjEkOUN-Y9Uh3b8QBnAt4vmCK5TJjuwpvNzjHcDCTdpXvhjlYb4JZzBUsUo68hNxIEE52dfs7VNi8Z7BUVCCBbnCeYZLdXQNk-N3wh0KAzgz3j8WZLqtq_czaP-4QHSTWGfyx8KDMsTgws7tgAzsx-YuzxxYB1CA29tOd8rXZXxieFOxtfUDl5AXEsvwScCBwvOdVPsLLQ706IPC3_WcCYsiu9Nss5huDSuCqAm5IBYe370mJQ/p.jpeg?fv_content=true&size_mode=5"
                            title="Services"
                            className={classes.media} />
             </CardContent>            

@@ -31,7 +31,7 @@ const HomeTestimonials = () => {
 
     return (
       <Container className={classes.container} maxWidth="lg">
-        <Grid container justify="center" alignItems="strech" direction="row" spacing={5}>
+        <Grid className={classes.mainGrid} container justify="center" alignItems="strech" direction="row" spacing={3}>
 
         <Grid className={classes.title} item xs={12} sm={12} md={8} lg={8}> 
               <Typography variant="h3">Customer Testimonials</Typography>

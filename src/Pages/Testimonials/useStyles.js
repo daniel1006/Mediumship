@@ -11,6 +11,7 @@ const useStyles = makeStyles (theme => {
             paddingRight: '5%',
             paddingBottom: '2%',
             textAlign: 'left',
+            backgroundColor: 'rgb(128,128,128, .8)',
         },
         paper: {
             color: 'whitesmoke',
@@ -29,7 +30,7 @@ const useStyles = makeStyles (theme => {
            height: 54,
            width: 54,
            fontSize: 26,
-           backgroundColor:'#8cd16f',
+           backgroundColor:'#6d78ae',
            color: 'whitesmoke',
            marginLeft: 15,
        },
@@ -37,17 +38,23 @@ const useStyles = makeStyles (theme => {
            fontWeight: 'bold',
            marginTop: 10,
            marginBottom: 5,
+           color: 'white',
+       },
+       quote: {
+           color: 'white',
        },
        quotation: {
            fontSize: 22,
        },
        more: {
         fontSize: 25,
-        color: '#6d78ae',
+        color: '#8cd16f' ,
       },
       button: {
         marginTop: 15,
         borderColor: '#8cd16f',
+        borderWidth: '3px',
+        color: 'white',
     },
     }
 })

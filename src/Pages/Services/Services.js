@@ -112,21 +112,21 @@ const handleClose9 = () => {
       <Container maxWidth="lg">
       <Grid className={classes.mainContainer} container justify="center" alignItems="center" spacing={5}>
 
-      <Grid  item sm={12} xs={12} md={12} lg={12}>  
+      <Grid item sm={12} xs={12} md={12} lg={12}>  
         <Paper className={classes.paper} elevation="3">
         <Typography variant="h2">Services</Typography>
         </Paper>
       </Grid>  
 
       <Grid item sm={12} xs={12} md={5} lg={5}>  
-      <Card> 
+      <Card className={classes.cardBackground}> 
         <CardActionArea onClick={handleOpen1}>  
           <CardMedia component="img"
                            image="https://images.unsplash.com/photo-1520783077-5c05dd1fdc99?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                            title="Services"
                            className={classes.media} />
            <CardContent className={classes.cardContent}>
-            <Typography variant="h5">Private Reading</Typography> 
+            <Typography className={classes.eventName} variant="h5">Private Reading</Typography> 
             <ExpandMoreIcon className={classes.more} onClick={handleOpen1}/>
            </CardContent>
         </CardActionArea>
@@ -139,14 +139,14 @@ const handleClose9 = () => {
       </Grid>
 
       <Grid item sm={12} xs={12} md={5} lg={5}>   
-       <Card>
+       <Card className={classes.cardBackground}>
         <CardActionArea onClick={handleOpen8}>  
           <CardMedia component="img"
                            image="https://images.unsplash.com/photo-1505455184862-554165e5f6ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
                            title="Services"
                            className={classes.media} />
            <CardContent className={classes.cardContent}>
-            <Typography variant="h5">Two Person Reading</Typography> 
+            <Typography className={classes.eventName} variant="h5">Two Person Reading</Typography> 
             <ExpandMoreIcon className={classes.more} onClick={handleOpen8}/>
            </CardContent>
         </CardActionArea>
@@ -160,14 +160,14 @@ const handleClose9 = () => {
 
 
       <Grid item sm={12} xs={12} md={5} lg={5}>   
-       <Card>
+       <Card className={classes.cardBackground}>
         <CardActionArea onClick={handleOpen2}>  
           <CardMedia component="img"
-                           image="https://previews.dropbox.com/p/thumb/ABL9Db4fCVHh-NchZz9KTxxkXSQ-X_cc1_o4sSgL0kMbfoD2S06Z5v4hq8VSnrJYgbeB3t2x-gtJ0PSqmM-YcICx3sr0izYFx3jBWSOtNzUQ-tpqQ68XAG4C2Pofh6BtKknOdxb6dMxXpvy6iA5-cIlSGHI0Ix2k01er0uo8iG-cjTMPpPlOew6gK6LEEh5uJkXpngfa0YippkFFmHS9UjDebM9oJaup0gLrkDVPu_8u-QcXXhjGezVTEWFvpoEmDnss1BoBl027KM-VHRRacrcd0yRpA6vnjqk5dhgBh_ta6AREaMaWC2yNAgRBcHVn8N92vTgiRO3Q2MnvifH4uni9Vd2wuJ43aB6_EksdJnwqCA/p.jpeg?fv_content=true&size_mode=5"
+                           image="https://previews.dropbox.com/p/thumb/ABJrTkyZOCVjMX5GJwSJBv6GMwp5q78rJvhDkz7THlKL0Asr9vu_TMmCp4QBqCiOiTF07HxOawYBWOorcBTCJAAerCVKbM5s_9eW1XnmAAlL4AHB1744BtTo6lDeQx1kwraiGVAoHPSF20B3ndMEvkzMe9T0qZAhejB2spaxaL9AQ3Jr6S9ScRkspXa1rAR0zeYy8fIeGTO57sRl_RngopOpjCvsAoIUCq8ja6MF36gTL9QFk9LTsC-UOvWIHvEw92vBtv6F9fpE7lR-anZKhGIQ_GUl_6y-GCW1uraovVCd60B5jNh7KFURQb8JNPmsadruBUXnnPOXHDuSUVLkTqowyOO6MPuyS-wHHETZhL1FwA/p.jpeg?fv_content=true&size_mode=5"
                            title="Services"
                            className={classes.media} />
            <CardContent className={classes.cardContent}>
-            <Typography variant="h5">Private Group Reading</Typography> 
+            <Typography className={classes.eventName} variant="h5">Private Group Reading</Typography> 
             <ExpandMoreIcon className={classes.more} onClick={handleOpen2}/>
            </CardContent>
         </CardActionArea>
@@ -180,14 +180,14 @@ const handleClose9 = () => {
       </Grid>
 
       <Grid item sm={12} xs={12} md={5} lg={5}>   
-       <Card>
+       <Card className={classes.cardBackground}>
         <CardActionArea onClick={handleOpen3}>  
           <CardMedia component="img"
                            image="https://images.unsplash.com/photo-1607773709367-06b7a91f7e4a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
                            title="Services"
                            className={classes.media} />
            <CardContent className={classes.cardContent}>
-            <Typography variant="h5">Demonstrations</Typography> 
+            <Typography className={classes.eventName} variant="h5">Demonstrations</Typography> 
             <ExpandMoreIcon className={classes.more} onClick={handleOpen3}/>
            </CardContent>
         </CardActionArea>
@@ -200,14 +200,14 @@ const handleClose9 = () => {
       </Grid>
 
       <Grid item sm={12} xs={12} md={5} lg={5}>   
-       <Card>
+       <Card className={classes.cardBackground}>
         <CardActionArea onClick={handleOpen4}>  
           <CardMedia component="img"
                            image="https://images.unsplash.com/photo-1515923152115-758a6b16f35e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
                            title="Services"
                            className={classes.media} />
            <CardContent className={classes.cardContent}>
-            <Typography variant="h5">Corporate Events</Typography> 
+            <Typography className={classes.eventName} variant="h5">Corporate Events</Typography> 
             <ExpandMoreIcon className={classes.more} onClick={handleOpen4}/>
            </CardContent>
         </CardActionArea>
@@ -220,14 +220,14 @@ const handleClose9 = () => {
       </Grid>
 
       <Grid item sm={12} xs={12} md={5} lg={5}>   
-       <Card>
+       <Card className={classes.cardBackground}>
         <CardActionArea onClick={handleOpen5}>  
           <CardMedia component="img"
                            image="https://images.unsplash.com/photo-1585383234137-2367d3c5302d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
                            title="Services"
                            className={classes.media} />
            <CardContent className={classes.cardContent}>
-            <Typography variant="h5">Functions</Typography> 
+            <Typography className={classes.eventName} variant="h5">Functions</Typography> 
             <ExpandMoreIcon className={classes.more} onClick={handleOpen5}/>
            </CardContent>
         </CardActionArea>
@@ -240,14 +240,14 @@ const handleClose9 = () => {
       </Grid>
 
       <Grid  item sm={12} xs={12} md={5} lg={5}>  
-      <Card>
+      <Card className={classes.cardBackground}>
         <CardActionArea onClick={handleOpen9}>  
           <CardMedia component="img"
                            image="https://images.unsplash.com/uploads/14122810486321888a497/1b0cc699?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80"
                            title="Services"
                            className={classes.media} />
            <CardContent className={classes.cardContent}>
-            <Typography variant="h5">Fundraisers</Typography> 
+            <Typography className={classes.eventName} variant="h5">Fundraisers</Typography> 
             <ExpandMoreIcon className={classes.more} onClick={handleOpen9}/>
            </CardContent>
         </CardActionArea>
@@ -260,14 +260,14 @@ const handleClose9 = () => {
       </Grid>
 
       <Grid item sm={12} xs={12} md={5} lg={5}>   
-       <Card>
+       <Card className={classes.cardBackground}>
         <CardActionArea onClick={handleOpen6}>  
           <CardMedia component="img"
                            image="https://images.unsplash.com/photo-1569852178898-9605dfd85b4a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
                            title="Services"
                            className={classes.media} />
            <CardContent className={classes.cardContent}>
-            <Typography variant="h5">Teachings</Typography> 
+            <Typography className={classes.eventName} variant="h5">Teachings</Typography> 
             <ExpandMoreIcon className={classes.more} onClick={handleOpen6}/>
            </CardContent>
         </CardActionArea>
@@ -280,14 +280,14 @@ const handleClose9 = () => {
       </Grid>
 
       <Grid item sm={12} xs={12} md={5} lg={5}>   
-       <Card>
+       <Card className={classes.cardBackground}>
         <CardActionArea onClick={handleOpen7}>  
           <CardMedia component="img"
                            image="https://images.unsplash.com/photo-1445878411228-61748c536703?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                            title="Services"
                            className={classes.media} />
            <CardContent className={classes.cardContent}>
-            <Typography variant="h5">Workshops</Typography> 
+            <Typography className={classes.eventName} variant="h5">Workshops</Typography> 
             <ExpandMoreIcon className={classes.more} onClick={handleOpen7}/>
            </CardContent>
         </CardActionArea>

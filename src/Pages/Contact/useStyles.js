@@ -14,16 +14,17 @@ const useStyles = makeStyles(theme => {
           }, 
         },
         card: {
-            backgroundColor: 'transparent',
             boxShadow: 'none',
         },
         title1: {
+            color: 'white',
             textAlign: 'center',
             [theme.breakpoints.down("sm")]: {
                marginBottom: 20,
           }
         },
         title2: {
+            color: 'white',
             textAlign: 'center',
             marginBottom: 20,
         },
@@ -31,18 +32,28 @@ const useStyles = makeStyles(theme => {
            width: 350,
            marginTop: 20,
         },
-        birdMedia: {
-            height: 350,
-            backgroundColor: 'transparent'
+        cssLabel: {
+           color: 'white',
+        },
+        cssFocused: {},
+        cssOutlinedInput: {
+         '&$cssFocused $notchedOutline': {
+           borderColor: 'whitesmoke !important',
+         }
         },
         grid3: {
            justifyContent: 'right',
+           backgroundColor: 'rgb(128,128,128, .7)',
+           paddingTop: '2%',
+           borderRadius: '3px',
         },
         form: {
            display: 'flex',
            flexDirection: 'column',
            justifyContent: 'right',
            alignItems: 'center',
+           color: 'white',
+           borderColor: 'white',
         },
         message: {
            width: 500,
@@ -55,6 +66,8 @@ const useStyles = makeStyles(theme => {
            marginTop: 20,
            marginBottom: 30,
            borderColor: '#8cd16f',
+           borderWidth: '3px',
+           color: 'white',
         },
 
         wrapper: {
@@ -76,7 +89,6 @@ const useStyles = makeStyles(theme => {
          margin: 0,
          padding: 0,
          textAlign: 'center',
-         backgroundColor: 'whitesmoke'
       },
       container: {
          position: 'relative',
@@ -88,8 +100,10 @@ const useStyles = makeStyles(theme => {
       },
       media2: {
           height: '100vh',
+          backgroundColor:'black',
       },
       heading: {
+         color: 'white',
           position: 'absolute',
           paddingBottom: '10%',
           [theme.breakpoints.down("sm")]: {
@@ -97,6 +111,7 @@ const useStyles = makeStyles(theme => {
        },
       },
       heading2: {
+         color: 'white',
          position: 'absolute',
          paddingTop: '10%',
          [theme.breakpoints.down("sm")]: {
@@ -106,8 +121,10 @@ const useStyles = makeStyles(theme => {
       button1: {
          marginTop: 20,
          marginBottom: 30,
-         borderColor: '#8cd16f',
+         borderColor: '#6d78ae',
+         borderWidth: '3px',
          position: 'absolute',
+         fontSize: '20px',
       },
 }    
 })

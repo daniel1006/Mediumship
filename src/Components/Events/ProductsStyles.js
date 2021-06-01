@@ -9,6 +9,7 @@ export default makeStyles((theme) => ({
   upComingTitle: {
     display:'flex',
     justifyContent: 'center',
+    color:'white',
     padding: theme.spacing(6),
     [theme.breakpoints.down("sm")]: {
       padding: theme.spacing(4),

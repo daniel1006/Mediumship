@@ -17,7 +17,7 @@ const GroupRead = props => {
         <CardContent className={classes.cardContent}> 
 
         <CardMedia component="img"
-                           image="https://previews.dropbox.com/p/thumb/ABL9Db4fCVHh-NchZz9KTxxkXSQ-X_cc1_o4sSgL0kMbfoD2S06Z5v4hq8VSnrJYgbeB3t2x-gtJ0PSqmM-YcICx3sr0izYFx3jBWSOtNzUQ-tpqQ68XAG4C2Pofh6BtKknOdxb6dMxXpvy6iA5-cIlSGHI0Ix2k01er0uo8iG-cjTMPpPlOew6gK6LEEh5uJkXpngfa0YippkFFmHS9UjDebM9oJaup0gLrkDVPu_8u-QcXXhjGezVTEWFvpoEmDnss1BoBl027KM-VHRRacrcd0yRpA6vnjqk5dhgBh_ta6AREaMaWC2yNAgRBcHVn8N92vTgiRO3Q2MnvifH4uni9Vd2wuJ43aB6_EksdJnwqCA/p.jpeg?fv_content=true&size_mode=5"
+                           image="https://previews.dropbox.com/p/thumb/ABJrTkyZOCVjMX5GJwSJBv6GMwp5q78rJvhDkz7THlKL0Asr9vu_TMmCp4QBqCiOiTF07HxOawYBWOorcBTCJAAerCVKbM5s_9eW1XnmAAlL4AHB1744BtTo6lDeQx1kwraiGVAoHPSF20B3ndMEvkzMe9T0qZAhejB2spaxaL9AQ3Jr6S9ScRkspXa1rAR0zeYy8fIeGTO57sRl_RngopOpjCvsAoIUCq8ja6MF36gTL9QFk9LTsC-UOvWIHvEw92vBtv6F9fpE7lR-anZKhGIQ_GUl_6y-GCW1uraovVCd60B5jNh7KFURQb8JNPmsadruBUXnnPOXHDuSUVLkTqowyOO6MPuyS-wHHETZhL1FwA/p.jpeg?fv_content=true&size_mode=5"
                            title="Services"
                            className={classes.media} />    
         <MuiThemeProvider theme={theme}>                          

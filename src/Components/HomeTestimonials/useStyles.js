@@ -5,7 +5,11 @@ const useStyles = makeStyles (theme => {
         container: {
              paddingTop: 150,
         },
+        mainGrid: {
+           
+        },
         mainCard: {
+            backgroundColor: 'rgb(255,255,255, .8)',
        },
         title: {
             textAlign: 'center',

@@ -5,6 +5,10 @@ const useStyles = makeStyles(theme => {
     grid: {
        marginTop: '5%', 
        marginBottom: '5%',
+       [theme.breakpoints.down("sm")]: {
+          marginBottom: '20%',
+          marginTop: '15%',
+        }
    },
    media: {
      boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
@@ -17,7 +21,7 @@ const useStyles = makeStyles(theme => {
   },
   card: {
        display: 'flex',
-       backgroundColor: theme.palette.background.default,
+       backgroundColor: 'rgb(128,128,128, .7)',
        justifyContent: 'center',
        padding: 15,
        [theme.breakpoints.down("sm")]: {
@@ -38,14 +42,18 @@ const useStyles = makeStyles(theme => {
   text: {
        marginTop: '5%',
        textAlign: 'center',
+       color: 'white',
   },
   text2: {
       textAlign: 'center',
       marginTop: '3%',
+      color: 'white',
   },
   button: {
+        color: 'white',
        marginTop: '20%',
        borderColor: '#8cd16f',
+       borderWidth: '3px',
   },
 }
 })

@@ -56,20 +56,10 @@ const Contact = () => {
       <Container className={classes.container} maxWidth="lg">
         <Grid className={classes.root} container direction="row" justify="space-around" alignItems="center" spacing={3}>
           
-          <Grid item sm={11} xs={11} md={5} lg={5}>
-          <Card className={classes.card}>
-          <CardMedia   component="img"
-                           image="https://previews.dropbox.com/p/thumb/ABIY8C5bXruLd4o6zgqW6OX4pOokkD7OJUO4vRq4uJydOfvnWSLD6T7HtnW2gteVPzrOonUSSJK0mrUy8MyPVrSIfsVjGgbRDotU5KPKv573smZWXbfIEfqIbcu6rL4wT2kh57qTmAdASIjH-0fwVmYUe8ROTh3AxTER6vWIHm1blldYd1Rlle52oZxyRQz2Zn3E1oCxhtYZjSw7L5KXavE76f6ULSsPizCQ0nOBdHONL_VY8j3vtdn1m1DdhD-cJO1FtU64cuIqdZmicHAq6NK8_mPDn4y215af13BwsPze1kOmxz1yOP3JqKd0rYGVZTgzqBUBN1ckC6kRPVTYKzPo7mvN45TzzbMlhBdYx24gsw/p.png?fv_content=true&size_mode=5"
-                           title="Services"
-                           className={classes.birdMedia} />
-          </Card>                 
-          </Grid>
-          
-
-         <Grid item sm={11} xs={11} md={6} lg={6}> 
+         <Grid item sm={11} xs={11} md={8} lg={8}> 
           <MuiThemeProvider theme={theme}>
            <Typography className={classes.title1} gutterBottom variant="h3">Have any questions?</Typography>
-           <Typography className={classes.title2} gutterBottom color="textSecondary" variant="h6">Be sure to specify any <Link to="/services" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "underline", fontSize: 24, textDecorationColor:"#8cd16f"}}>services</Link> or upcoming <Link to="/" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "underline", fontSize: 24, textDecorationColor:"#6d78ae"}}>events</Link> you're wondering about.
+           <Typography className={classes.title2} gutterBottom color="textSecondary" variant="h6">Be sure to specify any <Link to="/services" style={{color:"white", textDecoration: "underline", fontSize: 24, textDecorationColor:"#8cd16f"}}>services</Link> or upcoming <Link to="/" style={{color:"white", textDecoration: "underline", fontSize: 24, textDecorationColor:"#6d78ae"}}>events</Link> you're wondering about.
            </Typography>
           </MuiThemeProvider> 
 
@@ -88,7 +78,14 @@ const Contact = () => {
                        name='user_name' 
                        error={errors.user_name}
                        helperText={errors.user_name && "Name is required"}
-                       {...register('user_name', { required: true, maxLength:20})}/> 
+                       {...register('user_name', { required: true, maxLength:20})}
+                       InputLabelProps={{ classes: {root: classes.cssLabel, focused: classes.cssFocused,} }}
+                       InputProps={{ classes: { root: classes.cssOutlinedInput, focused: classes.cssFocused,
+                          notchedOutline: classes.notchedOutline,
+                        },
+                        inputMode: "numeric"
+                      }}
+                       /> 
           </div>
            <div> 
                 <TextField 

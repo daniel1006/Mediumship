@@ -22,7 +22,7 @@ const App = () => {
 
     return (
         <div className="App">
-          <div className="">
+          <div>
           <Router>
             <Switch> 
              <Route path="/" exact component> <Navbar /> <Greetings/> <Products products={products}/> <Quote/> <HomeBio/> <HomeServices/> <HomeTestimonials/> <Footer/> </Route>
