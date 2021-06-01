@@ -5,8 +5,11 @@
    background-repeat: no-repeat;
    background-position: center;
    background-attachment: fixed;
-   overflow-x: none;
-    max-width: 100%;
+   width: 100%;
+   overflow: hidden;
+   -webkit-background-size:cover;
+   -moz-background-size:cover;
+   -o-background-size:cover;
 }
 
 body {
