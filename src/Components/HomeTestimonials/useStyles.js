@@ -20,6 +20,9 @@ const useStyles = makeStyles (theme => {
             borderWidth: '3px',
             float: 'right',
             margin: 10,
+            [theme.breakpoints.down("sm")]: {
+                marginBottom: '8%',
+              },
         },
     }
 })
