@@ -4,6 +4,7 @@ const useStyles = makeStyles (theme => {
     return {
         container: {
             paddingTop: '10%',
+            overflow: 'hidden',
         },
         card1: {
             paddingTop: '5%',

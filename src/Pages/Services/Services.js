@@ -110,7 +110,7 @@ const handleClose9 = () => {
 
     return (
       <Container maxWidth="lg">
-      <Grid className={classes.mainContainer} container justify="center" alignItems="center" spacing={5}>
+      <Grid className={classes.mainContainer} container justify="center" alignItems="center" spacing={3}>
 
       <Grid item sm={12} xs={12} md={12} lg={12}>  
         <Paper className={classes.paper} elevation="3">

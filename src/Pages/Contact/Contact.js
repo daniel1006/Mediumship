@@ -66,7 +66,6 @@ const Contact = () => {
           <Grid className={classes.grid3} container justify="center" direction="column" item sm={12} xs={12} md={12} lg={12}> 
          <form className={classes.form}
                id='Claudia_Mediumship'
-               lassName="form" 
                onSubmit={handleSubmit(onSubmit)}>         
         <div>
                 <TextField
@@ -117,11 +116,11 @@ const Contact = () => {
            </div>
  
                <div className={classes.wrapper}>
+               <Button className={classes.button} variant="outlined" size="large" type='submit' value='Send'  onClick={handleButtonClick}>Send</Button>
                 {loading && <CircularProgress size={24} className={classes.buttonProgress} />}
                 </div>
 
                </form>
-               <Button className={classes.button} variant="outlined" size="large" type='submit' value='Send'  onClick={handleButtonClick}>Send</Button>
              </Grid>  
           
        </Grid>        

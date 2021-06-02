@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => {
     return{
         mainContainer: {
+           overflow: 'hidden',
            paddingTop: '10%',
            paddingBottom: '7%',
            [theme.breakpoints.down("sm")]: {

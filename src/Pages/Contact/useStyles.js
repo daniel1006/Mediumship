@@ -61,9 +61,9 @@ const useStyles = makeStyles(theme => {
        buttonProgress: {
          color: 'blue',
          position: 'absolute',
-         top: '50%',
+         top: '0%',
          left: '50%',
-         marginTop: -12,
+         marginTop: 32,
          marginLeft: -12,
        },
 
