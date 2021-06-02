@@ -7,7 +7,7 @@ const useStyles = makeStyles(theme => {
           height: '100vh',
            paddingTop: '10%',
            [theme.breakpoints.down("sm")]: {
-            paddingTop: '55%',
+            paddingTop: '70%',
             marginBottom: '30%',
           }, 
         },
@@ -88,6 +88,7 @@ const useStyles = makeStyles(theme => {
           backgroundColor:'black',
       },
       heading: {
+         textAlign: 'center',
          color: 'white',
           position: 'absolute',
           paddingBottom: '10%',
