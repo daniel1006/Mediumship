@@ -14,8 +14,8 @@ const useStyles = makeStyles(theme => {
             marginTop: 10,
         },
         trademark: {
-           marginTop: '6%',
-           paddingBottom: 50,
+           marginTop: '8%',
+           paddingBottom: 30,
            marginRight: 0,
         },
         media: {

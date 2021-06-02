@@ -6,7 +6,6 @@ const useStyles = makeStyles (theme => {
             paddingTop: '5%',
             paddingLeft: '5%',
             paddingRight: '5%',
-            paddingBottom: '3%',
             textAlign: 'left',
             boxShadow: 'none',
             height: '100%',
@@ -31,9 +30,14 @@ const useStyles = makeStyles (theme => {
        name: {
            fontWeight: 'bold',
            marginTop: 10,
+           color: 'white',
+       },
+       quoteText: {
+           color: 'white',
        },
        quotation: {
            fontSize: 22,
+           color: 'white',
        },
     }
 })

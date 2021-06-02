@@ -9,15 +9,17 @@ const useStyles = makeStyles (theme => {
            
         },
         mainCard: {
-            backgroundColor: 'rgb(255,255,255, .8)',
+            backgroundColor: 'rgb(128,128,128, .8)',
        },
         title: {
             textAlign: 'center',
+            color: 'white',
         },
         button: {
-            marginTop: 15,
             borderColor: '#8cd16f',
-
+            borderWidth: '3px',
+            float: 'right',
+            margin: 10,
         },
     }
 })

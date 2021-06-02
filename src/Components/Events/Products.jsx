@@ -15,7 +15,7 @@ const Products = ({ products }) => {
         <div className={classes.toolbar} />
 
         <MuiThemeProvider theme={theme}>
-        <Typography align="center" variant="h1" className={classes.upComingTitle}> Upcoming events</Typography>
+        <Typography align="center" variant="h2" className={classes.upComingTitle}> Upcoming events</Typography>
         </MuiThemeProvider>
 
         <Grid container direction="row" justify="space-evenly" alignItems="center" spacing={3}>

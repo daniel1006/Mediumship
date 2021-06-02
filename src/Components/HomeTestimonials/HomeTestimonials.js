@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
-import { Container, Grid, Typography, createMuiTheme, MuiThemeProvider, responsiveFontSizes, Button, Card } from '@material-ui/core';
+import { Container, Grid, Typography, Button, Card } from '@material-ui/core';
 import useStyles from './useStyles';
 
 import Quote1 from './Quote1';
@@ -19,10 +19,6 @@ import SwiperCore, {
 } from 'swiper/core';
 // install Swiper modules
 SwiperCore.use([Pagination,Navigation]);
-
-
-let theme = createMuiTheme();
-theme = responsiveFontSizes(theme);
 
 const HomeTestimonials = () => {
     const classes = useStyles();
@@ -51,10 +47,12 @@ const HomeTestimonials = () => {
            <SwiperSlide> <Quote3/> </SwiperSlide>
            <SwiperSlide> <Quote1/> </SwiperSlide>
            <SwiperSlide> <Quote4/> </SwiperSlide>
+           <Button className={classes.button} size="large" variant="outlined"><Link to="/testimonials" style={{color:"white", textDecoration: "none"}}> View More </Link></Button>
 
         </Swiper>
+        
         </Card>
-        <Button className={classes.button} size="large" variant="outlined"><Link to="/testimonials" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}> View More </Link></Button> 
+        
         </Grid>
 
        </Grid>

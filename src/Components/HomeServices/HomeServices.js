@@ -1,18 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import { Grid, Card, CardMedia, CardActions, CardContent, Button, Typography, Container, Paper } from '@material-ui/core';
+import { Grid, Card, CardMedia, CardContent, Button, Typography, Container,} from '@material-ui/core';
 import useStyles from './styles';
 
-import ArrowDownwardRoundedIcon from '@material-ui/icons/ArrowDownwardRounded';
-
-const styles = {
-  root: {
-    "& .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-3.MuiGrid-align-items-xs-center.MuiGrid-justify-xs-space-evenly": {
-      width: 'auto',
-      margin: 'auto'
-   }
-  }
-};
 
 const HomeServices = () => {
   const classes = useStyles();

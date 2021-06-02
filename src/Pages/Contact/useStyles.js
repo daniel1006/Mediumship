@@ -8,9 +8,7 @@ const useStyles = makeStyles(theme => {
            paddingTop: '10%',
            [theme.breakpoints.down("sm")]: {
             paddingTop: '30%',
-            marginBottom: '120%',
-          }, 
-          [theme.breakpoints.down("xs")]: {
+            marginBottom: '30%',
           }, 
         },
         card: {
@@ -29,45 +27,32 @@ const useStyles = makeStyles(theme => {
             marginBottom: 20,
         },
         textInput: {
-           width: 350,
-           marginTop: 20,
-        },
-        cssLabel: {
-           color: 'white',
-        },
-        cssFocused: {},
-        cssOutlinedInput: {
-         '&$cssFocused $notchedOutline': {
-           borderColor: 'whitesmoke !important',
-         }
+         width: '75%',
+         marginLeft: '13%',
+         marginBottom: 20,
         },
         grid3: {
-           justifyContent: 'right',
-           backgroundColor: 'rgb(128,128,128, .7)',
-           paddingTop: '2%',
+           paddingTop: '4%',
            borderRadius: '3px',
+           backgroundColor: 'rgb(220,220,220, .8)',
         },
         form: {
            display: 'flex',
            flexDirection: 'column',
-           justifyContent: 'right',
-           alignItems: 'center',
-           color: 'white',
-           borderColor: 'white',
+           justifyContent: 'center',
+           alignItems: 'left',
         },
         message: {
-           width: 500,
-           marginTop: 20,
-           [theme.breakpoints.down("sm")]: {
-            width: 350,
-         },
+           width: '90%',
+           marginLeft: '5%',
         },
         button: {
            marginTop: 20,
            marginBottom: 30,
-           borderColor: '#8cd16f',
+           borderColor: '#6d78ae',
            borderWidth: '3px',
-           color: 'white',
+           width: '45%',
+           marginLeft: '27%',
         },
 
         wrapper: {
