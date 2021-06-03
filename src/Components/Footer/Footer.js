@@ -24,7 +24,7 @@ const Footer = () => {
           <Grid className={classes.gridItem2} item xs={12} sm={12} md={6} lg={6}>
                <Box className={classes.header} borderBottom={1}><Typography variant="h5">Follow Me</Typography></Box>
                <Box className={classes.box}><a className="footer-links" href="https://www.instagram.com/spiritualmediumclaudiaremy/" target="_blank" rel="noreferrer"><Typography>Instagram</Typography></a></Box>
-               <Box className={classes.box}><a className="footer-links" href="https://www.facebook.com/claudialisa.remy" target="_blank" rel="noreferrer"><Typography>Facebook</Typography></a></Box>
+               <Box className={classes.box}><a className="footer-links" href="https://www.facebook.com/claudiaremy.spiritualmedium" target="_blank" rel="noreferrer"><Typography>Facebook</Typography></a></Box>
           </Grid>
 
         <Box className={classes.trademark}>LanthierWebDesign &reg; {new Date().getFullYear()}</Box>        

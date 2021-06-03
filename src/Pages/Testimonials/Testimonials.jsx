@@ -33,6 +33,12 @@ const Testimonials = () => {
       setExpanded4(!expanded4);
        };
 
+       const [expanded5, setExpanded5] = React.useState(false);
+
+       const handleExpandClick5 = () => {
+       setExpanded5(!expanded5);
+        };
+
     const myRef = useRef(null)
    
     const executeScroll = () => myRef.current.scrollIntoView()   
@@ -185,6 +191,32 @@ const Testimonials = () => {
         <Collapse in={expanded4} timeout="auto" unmountOnExit >
           <Typography className={classes.quote} variant="h6" gutterBottom><span className={classes.quotation}>"</span>As a bereaved mother I know that an experience with a medium, sometimes, is a matter of death and life. If a medium gives the wrong or nonevidential reading a bereaved mother will suffer great harm, loos all the hope, and it might be irreversible. My experience with Claudia Remy was one of the best experiences I have ever encountered! Claudia Is an amazing, fun loving, vibrant, and very Gifted Person! She connects on a level of no doubt and gives evidence you cannot deny! The way Claudia described my loved ones was unbelievable. She not only had all the facts, but Claudia also gives specifics about the deceased person, as if they were friends with Claudia! If you are grieving and want to have a reading, I recommend Claudia Remy as the best medium and caring, and supportive person. She made me laugh and cry but most of all her reading brought me a sense of peace that I do not think I would have gotten from anything else. Although, I am still grieving, I feel such comfort knowing now that my son is still living in spirit, and one day we will be together again. Thank you Claudia, your readings are healing!<span className={classes.quotation}>"</span></Typography>       
           <Button className={classes.button} variant="outlined" onClick={() => { executeScroll(); handleExpandClick4();}}> Close </Button> 
+        </Collapse>
+
+        </Card>
+        </Grid>
+        </Grid>
+
+        <Grid item sm={12} xs={12} md={6} lg={6}>  
+          <Grid container direction="column">   
+          <Card className={classes.card1}>
+
+       <Typography className={classes.name} variant="h6" gutterBottom>Patricia Longman, 2021</Typography> 
+
+         <div className={classes.TextAvatar}>
+          <Typography className={classes.quote} variant="h6" gutterBottom><span className={classes.quotation}>"</span>I have had the pleasure of enjoying two mediumship readings with Claudia thus far in 2021...<span className={classes.quotation}>"</span></Typography>
+          <Avatar className={classes.avatar}>P</Avatar>
+        </div>
+
+        <Tooltip title="More" arrow>
+         <IconButton className={clsx(classes.expand, {[classes.expandOpen]: expanded5, })} onClick={handleExpandClick5} aria-expanded={expanded5} aria-label="show more"> 
+          <ExpandMoreIcon className={classes.more} />
+         </IconButton>
+        </Tooltip> 
+
+        <Collapse in={expanded5} timeout="auto" unmountOnExit >
+          <Typography className={classes.quote} variant="h6" gutterBottom><span className={classes.quotation}>"</span>I have had the pleasure of enjoying two mediumship readings with Claudia thus far in 2021. She is an incredibly gifted, sensitive and loving Soul. Our sessions felt more like time spent with an old friend and the time flew by far too quickly! She accurately described close friends and beloved family members who were present and came forward during the readings. Claudia and I shared laughter and some tears as I recalled stories and verified those eager to speak to me. The love and messages she shared from them during our times together are invaluable to me and I treasure each one. I have no hesitation whatsoever in recommending Claudia to anyone seeking a mediumship reading. I’m already looking forward to our next session together. ♥️<span className={classes.quotation}>"</span></Typography>       
+          <Button className={classes.button} variant="outlined" onClick={() => { executeScroll(); handleExpandClick5();}}> Close </Button> 
         </Collapse>
 
         </Card>
