@@ -4,7 +4,7 @@ import { TextField, Button, Grid, Typography, createMuiTheme, MuiThemeProvider, 
 import useStyles from './useStyles';
 import { useForm } from 'react-hook-form';
 import { init, sendForm } from 'emailjs-com';
-init("user_ATLikbsUbE9p1oF2JazwA")
+init("user_fPIKlSyUaS5EcXd19jBdG")
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -18,7 +18,7 @@ const Contact = () => {
   
 
     const onSubmit = (data) =>  {
-        sendForm('default_service', 'template_sorw188', '#Claudia_Mediumship')
+        sendForm('default_service', 'template_fxwsg5k', '#service_bt1prbp')
         .then(function(response) {
         document.location = "/thankyou"
           console.log('SUCCESS!', response.status, response.text);
@@ -65,7 +65,7 @@ const Contact = () => {
 
           <Grid className={classes.grid3} container justify="center" direction="column" item sm={12} xs={12} md={12} lg={12}> 
          <form className={classes.form}
-               id='Claudia_Mediumship'
+               id='service_bt1prbp'
                onSubmit={handleSubmit(onSubmit)}>         
         <div>
                 <TextField
@@ -116,7 +116,13 @@ const Contact = () => {
            </div>
  
                <div className={classes.wrapper}>
-               <Button className={classes.button} variant="outlined" size="large" type='submit' value='Send'  onClick={handleButtonClick}>Send</Button>
+               <Button  className={classes.button}
+                        variant="outlined" 
+                        size="large" 
+                        type='submit' 
+                        value='Send'  
+                        onClick={handleButtonClick}>Send</Button>
+
                 {loading && <CircularProgress size={24} className={classes.buttonProgress} />}
                 </div>
 
