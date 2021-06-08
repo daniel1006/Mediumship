@@ -8,7 +8,7 @@ const useStyles = makeStyles(theme => {
            paddingTop: '10%',
            [theme.breakpoints.down("sm")]: {
             paddingTop: '80%',
-            marginBottom: '30%',
+            marginBottom: '38%',
           }, 
         },
         card: {
