@@ -20,7 +20,7 @@ const Products = ({ products }) => {
 
         <Grid container direction="row" justify="space-evenly" alignItems="center" spacing={3}>
              {products.map((product) => (
-                 <Grid item key={product.id} sm={12} xs={12} md={4} lg={4}>
+                 <Grid item key={product.id} sm={12} xs={12} md={5} lg={5}>
                       <Product product={product} />
                  </Grid>
              ))}

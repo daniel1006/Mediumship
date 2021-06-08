@@ -21,10 +21,10 @@ const Functions = props => {
                            title="Services"
                            className={classes.media} />    
         <MuiThemeProvider theme={theme}>                          
-         <Typography variant="h4" gutterBottom className={classes.title}>Functions, private & public<Typography variant="h5" className={classes.price} gutterBottom>price: $80+</Typography>
+         <Typography variant="h4" gutterBottom className={classes.title}>Events, corporate, & private functions<Typography variant="h5" className={classes.price} gutterBottom>price: $80+</Typography>
          <Typography variant="h6">Price is dependent on platform size and space</Typography>
          </Typography>
-         <Typography className={classes.description} variant="body1"></Typography>
+         <Typography className={classes.description} variant="body1">I love to spend the time connecting and bridging two amazing worlds together. No matter how small or large I love to bring in as many messages as possible from our loved ones in spirit. I want people to witness and to know that our loved ones are still with us and that life does continue on. I love an evening where people leave with their hearts full and enjoyed there time in a group experience. <br/><br/> Public events for small groups are held at various venues around the B.C area. <br/><br/> These events run for 2 hours</Typography>
         </MuiThemeProvider> 
            
          <Button className={classes.button} variant="outlined" size="large" onClick={props.handleClose5}>Close</Button>

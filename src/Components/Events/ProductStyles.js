@@ -10,6 +10,16 @@ const useStyles = makeStyles(theme => {
       height: 0,
       paddingTop: '56.25%', // 16:9
     },
+
+    modalMedia: {
+      height: 0,
+      borderRadius: '4px',
+        height: '40%',
+        width: '40%',
+        [theme.breakpoints.down("sm")]: {
+        height: 200,
+        },
+    },
     cardActions: {
       display: 'flex',
       justifyContent: 'flex-end',
@@ -51,6 +61,10 @@ const useStyles = makeStyles(theme => {
     borderColor: '#8cd16f',
     borderWidth: '3px',
   },
+
+  modal: {
+    overflow: 'scroll',
+ },
 
   }
 })

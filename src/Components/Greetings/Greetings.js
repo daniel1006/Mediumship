@@ -20,7 +20,7 @@ const Greetings = () => {
                            className={classes.media} /> 
             <MuiThemeProvider theme={theme}>
               <Typography variant="h1" className={classes.title}>A voice for Spirit</Typography> 
-              <Typography variant="h4" className={classes.title2}>An Evidential Spiritual Medium</Typography>  
+              <Typography variant="h4" color="textSecondary" className={classes.title2}>Claudia Remy, an evidential spiritual medium</Typography>  
             </MuiThemeProvider>  
               </Card>     
             </Grid>

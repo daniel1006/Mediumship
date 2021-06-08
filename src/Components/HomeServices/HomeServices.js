@@ -16,7 +16,7 @@ const HomeServices = () => {
           
     <div className={classes.cardDirection}>
       <Typography className={classes.text} variant="h3" gutterBottom>Services</Typography>
-      <Typography className={classes.text2} variant="h6">The emphasis of my work is mediumship: making connections with and delivering messages from people who are no longer living to those who still are. I receive information primarily and directly from the dead, spirit guides and angels. I like to say that I act as the bridge between the spiritual and physical world, helping to heal our connections between them.</Typography>
+      <Typography className={classes.text2} variant="h6">The emphasis of my work is mediumship: making connections with and delivering messages from people who are no longer living to those who still are. I receive information primarily and directly our loved ones in spirit. I like to say that I act as the bridge between the spiritual and physical world, helping to heal our connections between them.</Typography>
       <Typography className={classes.text2} variant="h6">Take a look at the different kinds of services I offer and the ways I can help you and your loved ones.</Typography>
       <Link to="/services" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>
        <Button className={classes.button} variant="outlined">View All Services</Button>

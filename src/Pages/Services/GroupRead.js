@@ -21,11 +21,10 @@ const GroupRead = props => {
                            title="Services"
                            className={classes.media} />    
         <MuiThemeProvider theme={theme}>                          
-         <Typography variant="h4" gutterBottom className={classes.title}> Group Reading (4-10 people)<Typography variant="h5" className={classes.price} gutterBottom>price: $60</Typography>
+         <Typography variant="h4" gutterBottom className={classes.title}> Group Reading (2-6 people)<Typography variant="h5" className={classes.price} gutterBottom>price: $60</Typography>
          <Typography variant="h6">Per Individual</Typography>
          </Typography>
-         <Typography className={classes.description} variant="body1">There’s a lot of laughter and love at these events! Gather a group of family or friends together and connect with your loved ones, privately or in a group setting.
-        </Typography>
+         <Typography className={classes.description} variant="body1">These intimate sessions are a place where friends or family can come together to share their experiences. I work with each member of the group and communicate with their loved ones in spirit within the privacy of their own homes.</Typography>
         </MuiThemeProvider> 
            
          <Button className={classes.button} variant="outlined" size="large" onClick={props.handleClose2}>Close</Button>

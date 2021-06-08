@@ -21,10 +21,10 @@ const WorkShops = props => {
                            title="Services"
                            className={classes.media} />    
         <MuiThemeProvider theme={theme}>                          
-         <Typography variant="h4" gutterBottom className={classes.title}>Workshops<Typography variant="h5" className={classes.price} gutterBottom>price: $80+</Typography>
+         <Typography variant="h4" gutterBottom className={classes.title}>Teachings / Workshops<Typography variant="h5" className={classes.price} gutterBottom>price: $80+</Typography>
          <Typography variant="h6">Price is dependent on platform size and space</Typography>
          </Typography>
-         <Typography className={classes.description} variant="body1"></Typography>
+         <Typography className={classes.description} variant="body1">These events are for those who are seeking to further develop their mediumship or psychic abilities. Whether you are a beginner, advance, or just starting off on your journey I can offer a safe and fun environment to learn in. I love to teach mediumship and spread the knowledge of what I have learned over the years. It is my desire to share what I love to do with everyone no matter where or who you are.</Typography>
         </MuiThemeProvider> 
            
          <Button className={classes.button} variant="outlined" size="large" onClick={props.handleClose7}>Close</Button>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
 import { commerce } from './lib/commerce';
+import { Helmet } from "react-helmet";
 
 import { Products, Navbar, Testimonials, Services, HomeServices, HomeBio, Contact, MyJourney, ThankYou, Footer, ScrollToTop, Greetings, HomeTestimonials, Quote, } from './Components';
 import './Index.css'
@@ -22,6 +23,13 @@ const App = () => {
 
     return (
         <div className="App">
+
+        <Helmet>
+          <title>Lanthier Web Design</title>
+          <meta name="description"
+             content="Hi! I'm Claudia Remy, a Calgary based evidential medium and this is my website. Here you can view who I am, the services I offer, and a multitle of customer testimonials."/>
+        </Helmet>
+
           <Router>
             <Switch> 
              <Route path="/" exact component> <Navbar /> <Greetings/> <Products products={products}/> <Quote/> <HomeBio/> <HomeServices/> <HomeTestimonials/> <Footer/></Route>

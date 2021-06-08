@@ -6,9 +6,9 @@ const useStyles = makeStyles(theme => {
             
         },
         root: {
-            marginTop: '50%',
+            marginTop: '15%',
              [theme.breakpoints.down("sm")]: {
-                marginTop: '20%',
+                marginTop: '15%',
               },
              textAlign: 'center',
         },
@@ -25,15 +25,16 @@ const useStyles = makeStyles(theme => {
         price: {
             color: '#66CD00',
             marginLeft: 5,
-            marginTop: 5,
+            marginTop: 15,
+        },
+        details: {
+           color: 'black',
+           fontSize: '22px',
         },
         description: {
             marginTop: 20,
-            padding: 10,
+            padding: 20,
             backgroundColor: 'lightgrey',
-        },
-        buttonGroup: {
-            
         },
         button: {
             marginTop: 25,
