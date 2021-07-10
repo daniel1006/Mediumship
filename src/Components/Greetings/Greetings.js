@@ -31,6 +31,8 @@ const Greetings = () => {
               <Typography variant="h6">Scroll</Typography>
               </div>
 
+              <Typography variant="h1" className={classes.title}>Hello</Typography>
+
             </MuiThemeProvider>  
 
               </Card>     
