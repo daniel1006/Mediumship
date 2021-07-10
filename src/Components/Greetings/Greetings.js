@@ -28,10 +28,8 @@ const Greetings = () => {
 
               <div className={classes.iconContainer}>
               <KeyboardArrowDownOutlinedIcon className={classes.icon}></KeyboardArrowDownOutlinedIcon> 
-              <Typography variant="h6">Scroll</Typography>
+              <Typography variant="h6" className={classes.icon}>Scroll</Typography>
               </div>
-
-              <Typography variant="h1" className={classes.title}>Hello</Typography>
 
             </MuiThemeProvider>  
 
