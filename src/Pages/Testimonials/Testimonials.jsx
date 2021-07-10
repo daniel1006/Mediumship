@@ -39,6 +39,12 @@ const Testimonials = () => {
        setExpanded5(!expanded5);
         };
 
+        const [expanded6, setExpanded6] = React.useState(false);
+
+        const handleExpandClick6 = () => {
+        setExpanded6(!expanded6);
+         };  
+
     const myRef = useRef(null)
    
     const executeScroll = () => myRef.current.scrollIntoView()   
@@ -217,6 +223,32 @@ const Testimonials = () => {
         <Collapse in={expanded5} timeout="auto" unmountOnExit >
           <Typography className={classes.quote} variant="h6" gutterBottom><span className={classes.quotation}>"</span>I have had the pleasure of enjoying two mediumship readings with Claudia thus far in 2021. She is an incredibly gifted, sensitive and loving Soul. Our sessions felt more like time spent with an old friend and the time flew by far too quickly! She accurately described close friends and beloved family members who were present and came forward during the readings. Claudia and I shared laughter and some tears as I recalled stories and verified those eager to speak to me. The love and messages she shared from them during our times together are invaluable to me and I treasure each one. I have no hesitation whatsoever in recommending Claudia to anyone seeking a mediumship reading. I’m already looking forward to our next session together. ♥️<span className={classes.quotation}>"</span></Typography>       
           <Button className={classes.button} variant="outlined" onClick={() => { executeScroll(); handleExpandClick5();}}> Close </Button> 
+        </Collapse>
+
+        </Card>
+        </Grid>
+        </Grid>
+        
+        <Grid item sm={12} xs={12} md={6} lg={6}>  
+          <Grid container direction="column">   
+          <Card className={classes.card1}>
+
+       <Typography className={classes.name} variant="h6" gutterBottom>Rowen Waters, 2021</Typography> 
+
+         <div className={classes.TextAvatar}>
+          <Typography className={classes.quote} variant="h6" gutterBottom><span className={classes.quotation}>"</span>I am very proud to call Claudia Remy my friend and mentor in evidential mediumship...<span className={classes.quotation}>"</span></Typography>
+          <Avatar className={classes.avatar}>P</Avatar>
+        </div>
+
+        <Tooltip title="More" arrow>
+         <IconButton className={clsx(classes.expand, {[classes.expandOpen]: expanded6, })} onClick={handleExpandClick6} aria-expanded={expanded5} aria-label="show more"> 
+          <ExpandMoreIcon className={classes.more} />
+         </IconButton>
+        </Tooltip> 
+
+        <Collapse in={expanded6} timeout="auto" unmountOnExit >
+          <Typography className={classes.quote} variant="h6" gutterBottom><span className={classes.quotation}>"</span>I am very proud to call Claudia Remy my friend and mentor in evidential mediumship. Over the past four years, I stand as witness to Claudia’s exemplary abilities both as an Evidential Medium and a teacher of mediumship. I have been a member of her Thursday Circle, and under her tutelage, I have developed in my mediumship much more than I could have ever imagined! Claudia is an ethical and compassionate Spiritual Medium, well-grounded in the values of Spiritualism, and also extremely talented and versatile in her mediumship methodology. She is dedicated to being in service to Spirit and has tirelessly volunteered her mediumship and teaching to both our Spiritualist Churches here in Calgary. When giving readings, Claudia provides a safe and confidential presence as Medium, relaying the gentle and loving messages of loved ones in Spirit both to the bereaved and those seeking guidance. She provides a safe link to the Spirit World, through which Spirit can communicate, and she relays Spirit’s messages of love, hope, and encouragement to their relatives and friends. As an Evidential Medium, Claudia is providing a service both for the sitter/s and for their loved ones in Spirit as they want to communicate with us as much as we wish to hear from them!  She practices her mediumship in the vibration of pure love, and it is the loving energy of Spirit that always manifests in her readings.  I will continue to highly recommend Claudia’s services as an Evidential Spiritual Medium to friends and family seeking to connect with the wisdom and love of Spirit. As a teacher of evidential mediumship, Claudia is passionate, wise and very humorous as well. Her Thursday Development Circle at Gateway Spiritualist Church was challenging, always fun and full of surprises. I look forward to being a member of  Claudia’s Mediumship Development Circle in the future. <span className={classes.quotation}>"</span></Typography>       
+          <Button className={classes.button} variant="outlined" onClick={() => { executeScroll(); handleExpandClick6();}}> Close </Button> 
         </Collapse>
 
         </Card>

@@ -1,0 +1,31 @@
+.media {
+    background-image: url("https://images.unsplash.com/photo-1538859947109-a81f6eb1945d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+
+  /* Full height */
+  height: 100vh;
+  position:relative;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#flikering::after{
+  content: '';
+  animation: blink 5s linear infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    content: 'Claudia Remy';
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    content: 'An evidential spiritual medium';
+  }
+}

@@ -22,7 +22,7 @@ const HomeBio = () => {
             </CardContent>            
             <div className={classes.cardDirection}>
               <Typography className={classes.text} variant="h3" gutterBottom>Claudia Remy</Typography>
-              <Typography className={classes.text2} variant="h6">Hi, my name is Claudia Remy, and I am medium!  I believe the purpose of mediumship is to console the bereaved by demonstrating that life lives on in the Spirit world. I help show people that our loved ones are safe, happy and that mediumship can provide comfort, support and closure for the living as well as for the souls of our loved ones on the other side.</Typography>
+              <Typography className={classes.text2} variant="h6">Hi, my name is Claudia Remy, and I am a medium!  I believe the purpose of mediumship is to console the bereaved by demonstrating that life lives on in the Spirit world. I help show people that our loved ones are safe, happy and that mediumship can provide comfort, support and closure for the living as well as for the souls of our loved ones on the other side.</Typography>
               <Link to="/myjourney" style={{color:"rgba(0, 0, 0, 0.87)", textDecoration: "none"}}>
                <Button className={classes.button} variant="outlined">Read More ABout My journey</Button>
               </Link>

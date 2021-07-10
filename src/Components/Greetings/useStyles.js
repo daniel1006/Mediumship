@@ -7,49 +7,43 @@ const useStyles = makeStyles(theme => {
            backgroundColor: theme.palette.background.default,
            margin: 0,
            padding: 0,
+           overflow: 'hidden',
         },
         container: {
-           position: 'relative',
-           borderRadius: 0,
-           display: 'flex',
-           flexDirection: 'column',
-           justifyContent: 'center',
-           alignItems: 'center'
-        },
-        media: {
-            height: '100vh',
-        },
-        media2: {
-            position: 'absolute',
-            backgroundColor: 'transparent',
-            width: 225,
-            height: 225,
-            display: 'inline-block',
-            left: 15,
-            top: 15,
+           textAlign: 'center',
         },
         title: {
-         position: 'absolute',
+         paddingTop: '6%',
          color: '#8cd16f',
-         paddingBottom: '30%',
          [theme.breakpoints.down("sm")]: {
+            paddingTop: '30%',
             fontSize: '46px',
        },
        [theme.breakpoints.down("xs")]: {
-         paddingBottom: '90%',
          textAlign: 'center'
     },
         },
+
         title2: {
-         position: 'absolute',
-         paddingBottom: '18%',
-         [theme.breakpoints.down("xs")]: {
-            textAlign: 'center',
-            paddingBottom: '55%',
+         [theme.breakpoints.down("sm")]: {
+            paddingTop: '3%',
        },
         },
-
-        
+        iconContainer: {
+         display: 'flex',
+         flexDirection: 'row',
+         justifyContent: 'flex-end',
+         alignItems: 'flex-end',
+         marginRight: '5%',
+         marginTop: '28%',
+         [theme.breakpoints.down("sm")]: {
+            marginTop: '110%',
+       },
+       [theme.breakpoints.down("xs")]: {
+    },
+        },
+        icon: {
+        }
 }    
 })
 

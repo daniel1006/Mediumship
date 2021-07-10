@@ -49,10 +49,24 @@ const Product = ({ product }) => {
              </div>
 
              <Tooltip title="Share" arrow>
-                <IconButton aria-label="share" aria-controls="simple-menu" aria-haspopup="true">
-                   <ShareIcon className={classes.share}/>
-                </IconButton>
-            </Tooltip>
+    <IconButton aria-label="share" aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+        <ShareIcon className={classes.share}/>
+    </IconButton>
+      </Tooltip>
+       <Menu id="simple-menu" anchorEl={anchorEl} keepMounted open={!!anchorEl} getContentAnchorEl={null} onClose={handleClose} 
+             anchorOrigin={{
+             vertical: "top",
+             horizontal: "center",
+            }}
+             transformOrigin={{
+             vertical: "top",
+             horizontal: "right",
+            }}>
+         <ReactShareSocial 
+             url ="url_to_share.com" 
+             socialTypes={['facebook','twitter','reddit','linkedin', ]} 
+             style={style}/>
+      </Menu>
 
             </CardContent>
         </Card>
