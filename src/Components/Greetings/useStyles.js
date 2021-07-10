@@ -31,11 +31,13 @@ const useStyles = makeStyles(theme => {
         title2: {
          paddingBottom: '16%',
          position: 'absolute',
+         color: 'black',
          [theme.breakpoints.down("sm")]: {
             paddingBottom: '77%',
        },
         },
         iconContainer: {
+         color: 'black',
          position: 'absolute',
          display: 'flex',
          flexDirection: 'row',
@@ -49,10 +51,12 @@ const useStyles = makeStyles(theme => {
     },
         },
         icon: {
+         color: 'black',
            marginBottom: '4px',
            position:"relative",
         },
         icon2: {
+         color: 'black',
          position:"relative",
       }
 }    
