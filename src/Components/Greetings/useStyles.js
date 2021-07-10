@@ -42,10 +42,8 @@ const useStyles = makeStyles(theme => {
          display: 'flex',
          flexDirection: 'row',
          paddingTop: '42%',
-         left: '92%',
          [theme.breakpoints.down("sm")]: {
             marginTop: '110%',
-            left: '75%',
        },
        [theme.breakpoints.down("xs")]: {
     },
