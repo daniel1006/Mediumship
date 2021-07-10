@@ -6,35 +6,42 @@ const useStyles = makeStyles(theme => {
            height: '100%',
            margin: 0,
            padding: 0,
-           overflow: 'hidden',
         },
         container: {
-           textAlign: 'center',
-        },
-        title: {
-         paddingTop: '6%',
-         color: '#8cd16f',
-         [theme.breakpoints.down("sm")]: {
-            paddingTop: '30%',
-            fontSize: '46px',
-       },
-       [theme.breakpoints.down("xs")]: {
-         textAlign: 'center'
+         position: 'relative',
+         borderRadius: 0,
+         display: 'flex',
+         flexDirection: 'column',
+         justifyContent: 'center',
+         alignItems: 'center'
+      },
+        media: {
+         height: '100vh',
+     },
+     title: {
+      position: 'absolute',
+      color: '#8cd16f',
+      paddingBottom: '58%',
+      [theme.breakpoints.down("sm")]: {
+         fontSize: '46px',
     },
+    [theme.breakpoints.down("xs")]: {
+      paddingBottom: '85%',
+      textAlign: 'center'
+ },
         },
 
         title2: {
+         paddingBottom: '47%',
+         position: 'absolute',
          [theme.breakpoints.down("sm")]: {
             paddingTop: '3%',
        },
         },
         iconContainer: {
+         position: 'absolute',
          display: 'flex',
          flexDirection: 'row',
-         justifyContent: 'flex-end',
-         alignItems: 'flex-end',
-         marginRight: '5%',
-         marginTop: '28%',
          [theme.breakpoints.down("sm")]: {
             marginTop: '110%',
        },
