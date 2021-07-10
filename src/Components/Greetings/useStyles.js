@@ -33,7 +33,7 @@ const useStyles = makeStyles(theme => {
          position: 'absolute',
          color: 'black',
          [theme.breakpoints.down("sm")]: {
-            paddingBottom: '77%',
+            paddingBottom: '16%',
        },
         },
         iconContainer: {
@@ -42,6 +42,7 @@ const useStyles = makeStyles(theme => {
          display: 'flex',
          flexDirection: 'row',
          [theme.breakpoints.down("sm")]: {
+            paddingtop: '10%',
        },
         },
         icon: {
