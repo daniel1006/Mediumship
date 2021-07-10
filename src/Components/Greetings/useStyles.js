@@ -50,8 +50,11 @@ const useStyles = makeStyles(theme => {
         },
         icon: {
            marginBottom: '4px',
-           position:"absolute",
-        }
+           position:"relative",
+        },
+        icon2: {
+         position:"relative",
+      }
 }    
 })
 

@@ -28,7 +28,7 @@ const Greetings = () => {
 
               <div className={classes.iconContainer}>
               <KeyboardArrowDownOutlinedIcon className={classes.icon}></KeyboardArrowDownOutlinedIcon> 
-              <Typography variant="h6" className={classes.icon}>Scroll</Typography>
+              <Typography variant="h6" className={classes.icon2}>Scroll</Typography>
               </div>
 
             </MuiThemeProvider>  
