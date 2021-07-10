@@ -21,29 +21,29 @@ const useStyles = makeStyles(theme => {
      title: {
       position: 'absolute',
       color: '#8cd16f',
-      paddingBottom: '58%',
+      paddingBottom: '28%',
       [theme.breakpoints.down("sm")]: {
          fontSize: '46px',
+         paddingBottom: '110%',
     },
-    [theme.breakpoints.down("xs")]: {
-      paddingBottom: '85%',
-      textAlign: 'center'
- },
         },
 
         title2: {
-         paddingBottom: '47%',
+         paddingBottom: '16%',
          position: 'absolute',
          [theme.breakpoints.down("sm")]: {
-            paddingTop: '3%',
+            paddingBottom: '77%',
        },
         },
         iconContainer: {
          position: 'absolute',
          display: 'flex',
          flexDirection: 'row',
+         paddingTop: '42%',
+         left: '92%',
          [theme.breakpoints.down("sm")]: {
             marginTop: '110%',
+            left: '75%',
        },
        [theme.breakpoints.down("xs")]: {
     },
