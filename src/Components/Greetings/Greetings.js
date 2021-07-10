@@ -16,7 +16,7 @@ const Greetings = () => {
         <Grid className={classes.greetings}>
             <Grid className={classes.item} item xs={12} sm={12} md={12} lg={12}>
               <Card className={classes.container}>
-              <div className="media"> 
+              <div className="landing-page"> 
 
             <MuiThemeProvider theme={theme}>
               <Typography variant="h1" className={classes.title}>A voice for Spirit</Typography> 

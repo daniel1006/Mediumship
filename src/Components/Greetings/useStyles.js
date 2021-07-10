@@ -4,7 +4,6 @@ const useStyles = makeStyles(theme => {
    return {
         greetings: {
            height: '100%',
-           backgroundColor: theme.palette.background.default,
            margin: 0,
            padding: 0,
            overflow: 'hidden',
