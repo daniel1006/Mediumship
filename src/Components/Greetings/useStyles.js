@@ -43,6 +43,7 @@ const useStyles = makeStyles(theme => {
     },
         },
         icon: {
+           marginBottom: '4px',
         }
 }    
 })

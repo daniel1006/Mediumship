@@ -23,7 +23,7 @@ const Greetings = () => {
               <Typography variant="h4" className={classes.title2} id="flikering"></Typography>
 
               <div className={classes.iconContainer}>
-              <KeyboardArrowDownOutlinedIcon classes={classes.icon}></KeyboardArrowDownOutlinedIcon> 
+              <KeyboardArrowDownOutlinedIcon className={classes.icon}></KeyboardArrowDownOutlinedIcon> 
               <Typography variant="h6">Scroll</Typography>
               </div>
 
