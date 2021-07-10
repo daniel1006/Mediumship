@@ -41,12 +41,8 @@ const useStyles = makeStyles(theme => {
          position: 'absolute',
          display: 'flex',
          flexDirection: 'row',
-         paddingTop: '42%',
          [theme.breakpoints.down("sm")]: {
-            marginTop: '110%',
        },
-       [theme.breakpoints.down("xs")]: {
-    },
         },
         icon: {
          color: 'black',
