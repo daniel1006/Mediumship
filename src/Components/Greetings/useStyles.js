@@ -32,6 +32,9 @@ const useStyles = makeStyles(theme => {
          paddingBottom: '16%',
          position: 'absolute',
          color: 'black',
+         [theme.breakpoints.down("sm")]: {
+            paddingBottom: '5%',
+       },
         },
         iconContainer: {
          color: 'black',
