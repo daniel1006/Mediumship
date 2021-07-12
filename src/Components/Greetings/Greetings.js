@@ -24,7 +24,9 @@ const Greetings = () => {
 
             <MuiThemeProvider theme={theme}>
               <Typography variant="h1" className={classes.title}>A voice for Spirit</Typography> 
-              <Typography variant="h4" className={classes.title2} id="flikering"></Typography>
+              <div className={classes.title2}>
+                <Typography variant="h4" className="flikering"></Typography>
+              </div>
 
               <div className={classes.iconContainer}>
               <KeyboardArrowDownOutlinedIcon className={classes.icon}></KeyboardArrowDownOutlinedIcon> 
