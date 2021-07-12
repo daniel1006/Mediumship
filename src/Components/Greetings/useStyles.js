@@ -22,6 +22,9 @@ const useStyles = makeStyles(theme => {
       position: 'absolute',
       color: '#8cd16f',
       paddingBottom: '28%',
+      [theme.breakpoints.down("md")]: {
+         paddingTop: '20%',
+    },
       [theme.breakpoints.down("sm")]: {
          fontSize: '46px',
          paddingBottom: '110%',
@@ -41,8 +44,10 @@ const useStyles = makeStyles(theme => {
          position: 'absolute',
          display: 'flex',
          flexDirection: 'row',
+         paddingTop: '40%',
+         left: '85%',
          [theme.breakpoints.down("sm")]: {
-            paddingTop: '135%',
+            paddingTop: '115%',
             left: '75%',
        },
         },

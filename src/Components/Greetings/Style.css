@@ -1,5 +1,5 @@
 #flikering::after{
-  content: 'Claudia Remy';
+  content: '';
   animation: blink 5s linear infinite alternate;
 }
 
@@ -11,6 +11,6 @@
     color: transparent;
   }
   100% {
-    content: 'An evidential spiritual medium' !important;
+    content: 'An evidential spiritual medium';
   }
 }
