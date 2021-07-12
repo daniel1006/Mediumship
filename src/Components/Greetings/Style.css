@@ -1,6 +1,6 @@
 #flikering::after{
-  content: '';
-  animation: blink 5s linear infinite alternate;
+  content: 'Claudia Remy';
+  -webkit-animation: blink 5s linear infinite alternate;
 }
 
 @keyframes blink {
