@@ -42,7 +42,8 @@ const useStyles = makeStyles(theme => {
          display: 'flex',
          flexDirection: 'row',
          [theme.breakpoints.down("sm")]: {
-            paddingtop: '10%',
+            paddingTop: '150%',
+            left: '75%',
        },
         },
         icon: {
