@@ -12,7 +12,7 @@ const Greetings = () => {
 
     var example = ['Claudia Remy', 'An evidential Spiritul Medium',];
 
-        textSequence(0);
+        textSequence(1);
         function textSequence(i) {
 
             if (example.length > i) {
@@ -43,7 +43,7 @@ const Greetings = () => {
             <MuiThemeProvider theme={theme}>
               <Typography variant="h1" className={classes.title}>A voice for Spirit</Typography> 
               <div className={classes.title2}>
-                <Typography id="sequence" style={{fontSize: '30px', }}></Typography>
+                <Typography id="sequence" style={{fontSize: '30px', }}>Claudia Remy</Typography>
               </div>
 
               <div className={classes.iconContainer}>
