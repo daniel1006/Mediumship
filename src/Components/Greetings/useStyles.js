@@ -42,7 +42,7 @@ const useStyles = makeStyles(theme => {
          display: 'flex',
          flexDirection: 'row',
          [theme.breakpoints.down("sm")]: {
-            paddingTop: '150%',
+            paddingTop: '135%',
             left: '75%',
        },
         },
