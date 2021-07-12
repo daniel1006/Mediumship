@@ -1,6 +1,6 @@
-#flikering::before{
+#flikering:before{
   content: 'Claudia Remy';
-  -webkit-animation: blink 5s linear infinite alternate;
+  animation: blink 5s linear infinite alternate;
 }
 
 @keyframes blink {
