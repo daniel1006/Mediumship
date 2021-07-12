@@ -9,6 +9,24 @@ theme = responsiveFontSizes(theme);
 
 const Greetings = () => {
     const classes = useStyles();
+
+    var example = ['Claudia Remy', 'An evidential Spiritul Medium',];
+
+        textSequence(0);
+        function textSequence(i) {
+
+            if (example.length > i) {
+                setTimeout(function() {
+                    document.getElementById("sequence").innerHTML = example[i];
+                    textSequence(++i);
+                }, 5000); // 5 second (in milliseconds)
+
+            } else if (example.length == i) { // Loop
+                textSequence(0);
+            }
+
+        }
+
     return (
       <div>
       <style jsx global>{`body { margin: 0px; padding: 0px;}`}</style>
@@ -25,7 +43,7 @@ const Greetings = () => {
             <MuiThemeProvider theme={theme}>
               <Typography variant="h1" className={classes.title}>A voice for Spirit</Typography> 
               <div className={classes.title2}>
-                <Typography variant="h4" className="flikering"></Typography>
+                <Typography id="sequence" style={{fontSize: '30px', }}></Typography>
               </div>
 
               <div className={classes.iconContainer}>

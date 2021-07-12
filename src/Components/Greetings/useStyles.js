@@ -19,6 +19,7 @@ const useStyles = makeStyles(theme => {
          height: '100vh',
      },
      title: {
+      textAlign: 'center',
       position: 'absolute',
       color: '#8cd16f',
       paddingBottom: '28%',
@@ -27,14 +28,14 @@ const useStyles = makeStyles(theme => {
     },
       [theme.breakpoints.down("sm")]: {
          fontSize: '46px',
-         paddingBottom: '125%',
+         paddingBottom: '140%',
     },
         },
 
         title2: {
+         textAlign: 'center',
          paddingBottom: '16%',
          position: 'absolute',
-         color: 'black',
          [theme.breakpoints.down("sm")]: {
             paddingBottom: '75%',
        },
