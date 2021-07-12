@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => {
     },
       [theme.breakpoints.down("sm")]: {
          fontSize: '46px',
-         paddingBottom: '110%',
+         paddingBottom: '125%',
     },
         },
 

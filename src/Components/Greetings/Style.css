@@ -1,4 +1,4 @@
-#flikering::after{
+#flikering::before{
   content: 'Claudia Remy';
   -webkit-animation: blink 5s linear infinite alternate;
 }
