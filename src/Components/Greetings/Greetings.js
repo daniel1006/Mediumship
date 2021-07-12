@@ -10,7 +10,7 @@ theme = responsiveFontSizes(theme);
 const Greetings = () => {
     const classes = useStyles();
 
-    var example = ['Claudia Remy', 'An evidential Spiritul Medium',];
+    var example = ['Claudia Remy', 'An Evidential Spiritual Medium',];
 
         textSequence(1);
         function textSequence(i) {
@@ -43,7 +43,7 @@ const Greetings = () => {
             <MuiThemeProvider theme={theme}>
               <Typography variant="h1" className={classes.title}>A voice for Spirit</Typography> 
               <div className={classes.title2}>
-                <Typography id="sequence" style={{fontSize: '30px', }}>Claudia Remy</Typography>
+                <Typography id="sequence" style={{fontSize: '30px', textAlign: 'center', }}>Claudia Remy</Typography>
               </div>
 
               <div className={classes.iconContainer}>
