@@ -17,7 +17,7 @@ const ThankYou = () => {
             <Card className={classes.container}>
 
             <CardMedia  component="img"
-                           src="https://dl.dropboxusercontent.com/s/x9xz5pczy5lcn85/hummingbird%203%20see%20through.png?dl=0"
+                           src="https://dl.dropboxusercontent.com/s/w6y37cq0g9axreu/hummingbird%20see%20through%20adapted%20for%20colored%20background.png?dl=0"
                            title="Services"
                            className={classes.media2} /> 
 
