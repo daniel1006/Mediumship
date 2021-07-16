@@ -4,7 +4,7 @@ import { TextField, Button, Grid, Typography, createMuiTheme, MuiThemeProvider, 
 import useStyles from './useStyles';
 import { useForm } from 'react-hook-form';
 import { init, sendForm } from 'emailjs-com';
-init("user_fPIKlSyUaS5EcXd19jBdG")
+init("user_DnQCMfVnzpijnE8OO27EX")
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -18,7 +18,7 @@ const Contact = () => {
   
 
     const onSubmit = (data) =>  {
-        sendForm('default_service', 'template_fxwsg5k', '#service_bt1prbp')
+        sendForm('default_service', 'template_zafyutb', '#service_8il6dbb')
         .then(function(response) {
         document.location = "/thankyou"
           console.log('SUCCESS!', response.status, response.text);
