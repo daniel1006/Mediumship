@@ -18,7 +18,7 @@ const Contact = () => {
   
 
     const onSubmit = (data) =>  {
-        sendForm('default_service', 'template_zafyutb', '#service_8il6dbb')
+        sendForm('default_service', 'template_zafyutb', '#service_phkuhd3')
         .then(function(response) {
         document.location = "/thankyou"
           console.log('SUCCESS!', response.status, response.text);
