@@ -18,7 +18,7 @@ const Contact = () => {
   
 
     const onSubmit = (data) =>  {
-        sendForm('default_service', 'template_zafyutb', '#service_phkuhd3')
+        sendForm('default_service', 'template_zafyutb', '#service_zgmw9l9')
         .then(function(response) {
         document.location = "/thankyou"
           console.log('SUCCESS!', response.status, response.text);
@@ -65,7 +65,7 @@ const Contact = () => {
 
           <Grid className={classes.grid3} container justify="center" direction="column" item sm={12} xs={12} md={12} lg={12}> 
          <form className={classes.form}
-               id='service_phkuhd3'
+               id='service_zgmw9l9'
                onSubmit={handleSubmit(onSubmit)}>         
         <div>
                 <TextField
