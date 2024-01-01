@@ -44,6 +44,7 @@ const Contact = () => {
     if (!loading) {
       setSuccess(false);
       setLoading(true);
+      console.log("not working bitch")
       timer.current = window.setTimeout(() => {
         setSuccess(true);
         setLoading(false);

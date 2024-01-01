@@ -21,7 +21,7 @@ const GroupRead = props => {
                            title="Services"
                            className={classes.media} />    
         <MuiThemeProvider theme={theme}>                          
-         <Typography variant="h4" gutterBottom className={classes.title}> Group Reading (2-6 people)<Typography variant="h5" className={classes.price} gutterBottom>price: $60</Typography>
+         <Typography variant="h4" gutterBottom className={classes.title}> Group Reading, 2 hour sessions (10-12 people)<Typography variant="h5" className={classes.price} gutterBottom>price: $30</Typography>
          <Typography variant="h6">Per Individual</Typography>
          </Typography>
          <Typography className={classes.description} variant="body1">These intimate sessions are a place where friends or family can come together to share their experiences. I work with each member of the group and communicate with their loved ones in spirit within the privacy of their own homes.</Typography>

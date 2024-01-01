@@ -21,8 +21,8 @@ const SoloRead = props => {
                            title="Services"
                            className={classes.media} />    
         <MuiThemeProvider theme={theme}>                          
-         <Typography variant="h4" gutterBottom className={classes.title}> Private Reading  <Typography variant="h5" className={classes.price} gutterBottom>price: $100 <span className={classes.details}>- (1 person)</span> </Typography></Typography> 
-         <Typography variant="h5" className={classes.price} gutterBottom>price: $160 <span className={classes.details}>- (2 persons)</span> </Typography>
+         <Typography variant="h4" gutterBottom className={classes.title}> Private Reading  <Typography variant="h5" className={classes.price} gutterBottom>price: $120 <span className={classes.details}>- (1 person)</span> </Typography></Typography> 
+         <Typography variant="h5" className={classes.price} gutterBottom>price: $180 <span className={classes.details}>- (2 persons)</span> </Typography>
          <Typography variant="h6">1 hour</Typography>
          
          <Typography className={classes.description} gutterBottom variant="body1">I am a conduit for the spirit world. I act as the middle spirit between you and your loved ones. For me the Evidence and Validation is an important aspect of spirit communication. It is a honor to be that bridge for you. <br/><br/> I do private reads in person, zoom or by phone.</Typography>
